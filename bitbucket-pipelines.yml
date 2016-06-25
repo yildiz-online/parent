@@ -4,4 +4,4 @@ pipelines:
   default:
     - step:
         script:
-          - mvn clean deploy
+          - mvn -V -B -s settings.xml deploy
