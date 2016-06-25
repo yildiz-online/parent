@@ -19,4 +19,4 @@ To build the pom you will need
 
 ### Who do I talk to? ###
 
-* Repository owner: Grégory Van den Borre
+* Repository owner: Grégory Van den Borre (vandenborre.gregory@hotmail.fr)
