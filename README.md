@@ -1,22 +1,29 @@
-The parent project, provides a common version and configuration for every plugins.
+### The whole project ###
+
+This is part of the Yildiz-Engine project, a set of modules handling the different parts of a video game, or multimedia application creation.
+The project is built around the java language, every module expose a neat API to do anything related to its responsabilities.
+
+### This module ###
+
+This module is mostly used for build configuration, it contains only the Maven POM parent to all other modules where all the Maven plugins configuration and versions are stored.
 
 ### Informations ###
 
 * The version is 1.0.0-0-SNAPSHOT, this version is always kept, real versions are managed by the continuous build system.
-* Additional informations on https://yildiz.bitbucket.org
+* Additional informations on https://yildiz-games.be
 
 ### Build ###
 
-To build the pom you will need
+To build this pom you will need
 
-* Maven https://maven.apache.org/
+* Maven 3 https://maven.apache.org/
 * Java 8 JDK http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 ### Contribution guidelines ###
 
-* XML writing guidelines: https://yildiz.bitbucket.org/guidelines/xml
-* POM writing guidelines: https://yildiz.bitbucket.org/guidelines/pom
+* XML writing guidelines: https://yildiz-games.be/guidelines/xml
+* POM writing guidelines: https://yildiz-games.be/guidelines/pom
 
 ### Who do I talk to? ###
 
-* Repository owner: Grégory Van den Borre (vandenborre.gregory@hotmail.fr)
+* Repository owner: Grégory Van den Borre
