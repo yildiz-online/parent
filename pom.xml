@@ -25,6 +25,10 @@
     </developer>
   </developers>
 
+  <issueManagement>
+    <system>JIRA</system>
+    <url>https://yildiz.atlassian.net</url>
+  </issueManagement>
   <scm>
     <connection>scm:git:https://bitbucket.org/yildiz-engine-team/parent</connection>
     <developerConnection>scm:git:https://bitbucket.org/yildiz-engine-team/parent</developerConnection>
