@@ -4,4 +4,5 @@ pipelines:
   default:
     - step:
         script:
+          - mvn versioneye:update
           - mvn -V -B -s settings.xml deploy
