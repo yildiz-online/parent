@@ -298,7 +298,7 @@
           <version>${maven.plugin.versioneye.version}</version>
           <configuration>
             <apiKey>${maven.plugin.versioneye.key}</apiKey>
-            <projectId>${project.name}</projectId>
+            <projectId>${project.artifactId}</projectId>
             <mergeAfterCreate>false</mergeAfterCreate>
           </configuration>
         </plugin>
