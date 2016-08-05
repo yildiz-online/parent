@@ -14,7 +14,6 @@
       <properties>
         <gpg.keyname>${env.GPG_KEY}</gpg.keyname>
         <gpg.passphrase>${env.GPG_PWD}</gpg.passphrase>
-        <maven.plugin.versioneye.key>${env.VERSION_EYE_KEY}</maven.plugin.versioneye.key>
       </properties>
     </profile>
   </profiles>

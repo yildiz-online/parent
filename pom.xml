@@ -80,8 +80,6 @@
     <maven.plugin.pitest.version>1.1.10</maven.plugin.pitest.version>
     <maven.plugin.nexus.version>1.6.7</maven.plugin.nexus.version>
     <maven.plugin.version.version>2.2</maven.plugin.version.version>
-    <maven.plugin.versioneye.version>3.10.2</maven.plugin.versioneye.version>
-    <maven.plugin.versioneye.key>secret</maven.plugin.versioneye.key>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
   </properties>
@@ -291,16 +289,6 @@
               </goals>
             </execution>
           </executions>
-        </plugin>
-        <plugin>
-          <groupId>com.versioneye</groupId>
-          <artifactId>versioneye-maven-plugin</artifactId>
-          <version>${maven.plugin.versioneye.version}</version>
-          <configuration>
-            <apiKey>${maven.plugin.versioneye.key}</apiKey>
-            <projectId>${project.artifactId}</projectId>
-            <mergeAfterCreate>false</mergeAfterCreate>
-          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
