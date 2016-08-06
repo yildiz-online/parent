@@ -317,6 +317,7 @@
             </execution>
           </executions>
         </plugin>
+
         <plugin>
           <groupId>org.jooq</groupId>
           <artifactId>jooq-codegen-maven</artifactId>
