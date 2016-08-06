@@ -80,6 +80,7 @@
     <maven.plugin.pitest.version>1.1.10</maven.plugin.pitest.version>
     <maven.plugin.nexus.version>1.6.7</maven.plugin.nexus.version>
     <maven.plugin.version.version>2.2</maven.plugin.version.version>
+    <maven.plugin.jooq.version>3.8.4</maven.plugin.jooq.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
   </properties>
@@ -315,6 +316,11 @@
               </goals>
             </execution>
           </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.jooq</groupId>
+          <artifactId>jooq-codegen-maven</artifactId>
+          <version>${maven.plugin.jooq.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
