@@ -278,7 +278,7 @@
           <configuration>
             <serverId>ossrh</serverId>
             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            <autoReleaseAfterClose>false</autoReleaseAfterClose>
           </configuration>
         </plugin>
 
@@ -330,22 +330,42 @@
           <artifactId>jooq-codegen-maven</artifactId>
           <version>${maven.plugin.jooq.version}</version>
         </plugin>
+        <plugin>
+          <groupId>org.pitest</groupId>
+          <artifactId>pitest-maven</artifactId>
+          <version>${maven.plugin.pitest.version}</version>
+          <configuration>
+            <targetClasses>
+              <param>be.yildiz.*</param>
+            </targetClasses>
+            <targetTests>
+              <param>be.yildiz.*</param>
+            </targetTests>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
 
     <plugins>
       <plugin>
-        <groupId>org.pitest</groupId>
-        <artifactId>pitest-maven</artifactId>
-        <version>${maven.plugin.pitest.version}</version>
-        <configuration>
-          <targetClasses>
-            <param>be.yildiz.*</param>
-          </targetClasses>
-          <targetTests>
-            <param>be.yildiz.*</param>
-          </targetTests>
-        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.plugins</groupId>
+        <artifactId>nexus-staging-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
