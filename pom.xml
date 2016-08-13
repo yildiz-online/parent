@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>1.0.3-SNAPSHOT</version>
+  <version>1.0.3</version>
 
   <name>Yildiz Parent</name>
   <description>Project to hold the parent pom for all children projects.</description>
@@ -289,8 +289,9 @@
           <executions>
             <execution>
               <id>attach-sources</id>
+              <phase>deploy</phase>
               <goals>
-                <goal>deploy</goal>
+                <goal>jar</goal>
               </goals>
             </execution>
           </executions>
@@ -303,8 +304,9 @@
           <executions>
             <execution>
               <id>attach-javadocs</id>
+              <phase>deploy</phase>
               <goals>
-                <goal>deploy</goal>
+                <goal>jar</goal>
               </goals>
             </execution>
           </executions>
