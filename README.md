@@ -9,7 +9,6 @@ This module is mostly used for build configuration, it contains only the Maven P
 
 ### Informations ###
 
-* The version is 1.0.0-0-SNAPSHOT, this version is always kept, real versions are managed by the continuous build system.
 * Additional informations on https://yildiz-games.be
 
 ### Build ###

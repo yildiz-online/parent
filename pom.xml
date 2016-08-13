@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.2</version>
 
   <name>Yildiz Parent</name>
   <description>Project to hold the parent pom for all children projects.</description>
@@ -278,7 +278,7 @@
           <configuration>
             <serverId>ossrh</serverId>
             <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-            <autoReleaseAfterClose>false</autoReleaseAfterClose>
+            <autoReleaseAfterClose>true</autoReleaseAfterClose>
           </configuration>
         </plugin>
 
@@ -290,7 +290,7 @@
             <execution>
               <id>attach-sources</id>
               <goals>
-                <goal>jar</goal>
+                <goal>deploy</goal>
               </goals>
             </execution>
           </executions>
@@ -304,7 +304,7 @@
             <execution>
               <id>attach-javadocs</id>
               <goals>
-                <goal>jar</goal>
+                <goal>deploy</goal>
               </goals>
             </execution>
           </executions>
