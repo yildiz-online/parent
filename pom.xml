@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>1.0.4-SNAPSHOT</version>
+  <version>1.0.4</version>
 
   <name>Yildiz Parent</name>
   <description>Project to hold the parent pom for all children projects.</description>
@@ -289,7 +289,7 @@
           <executions>
             <execution>
               <id>attach-sources</id>
-              <phase>deploy</phase>
+              <phase>verify</phase>
               <goals>
                 <goal>jar</goal>
               </goals>
@@ -304,7 +304,7 @@
           <executions>
             <execution>
               <id>attach-javadocs</id>
-              <phase>deploy</phase>
+              <phase>verify</phase>
               <goals>
                 <goal>jar</goal>
               </goals>
@@ -356,6 +356,14 @@
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
