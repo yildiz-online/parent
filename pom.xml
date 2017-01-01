@@ -448,6 +448,11 @@
       </dependency>
       <dependency>
         <groupId>be.yildiz-games</groupId>
+        <artifactId>module-database</artifactId>
+        <version>${version.module-database}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
         <artifactId>module-graphic</artifactId>
         <version>${version.module-graphic}</version>
       </dependency>
@@ -475,6 +480,11 @@
         <groupId>be.yildiz-games</groupId>
         <artifactId>module-physics-bullet</artifactId>
         <version>${version.module-physics-bullet}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-scripting</artifactId>
+        <version>${version.module-scripting}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
