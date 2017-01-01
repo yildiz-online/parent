@@ -486,6 +486,21 @@
         <artifactId>module-scripting</artifactId>
         <version>${version.module-scripting}</version>
       </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>engine-shared</artifactId>
+        <version>${version.engine-shared}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>engine-server</artifactId>
+        <version>${version.engine-server}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>engine-client</artifactId>
+        <version>${version.engine-client}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
