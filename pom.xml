@@ -445,6 +445,13 @@
         <groupId>be.yildiz-games</groupId>
         <artifactId>module-audio-openal</artifactId>
         <version>${version.module-audio-openal}</version>
+        <classifier>linux64</classifier>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-audio-openal</artifactId>
+        <version>${version.module-audio-openal}</version>
+        <classifier>win32</classifier>
       </dependency>
       <dependency>
         <groupId>be.yildiz-games</groupId>
@@ -460,6 +467,13 @@
         <groupId>be.yildiz-games</groupId>
         <artifactId>module-graphic-ogre</artifactId>
         <version>${version.module-graphic-ogre}</version>
+        <classifier>linux64</classifier>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-graphic-ogre</artifactId>
+        <version>${version.module-graphic-ogre}</version>
+        <classifier>win32</classifier>
       </dependency>
       <dependency>
         <groupId>be.yildiz-games</groupId>
@@ -480,6 +494,13 @@
         <groupId>be.yildiz-games</groupId>
         <artifactId>module-physics-bullet</artifactId>
         <version>${version.module-physics-bullet}</version>
+        <classifier>win32</classifier>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-physics-bullet</artifactId>
+        <version>${version.module-physics-bullet}</version>
+        <classifier>linux64</classifier>
       </dependency>
       <dependency>
         <groupId>be.yildiz-games</groupId>
