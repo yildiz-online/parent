@@ -108,6 +108,28 @@
     <maven.plugin.docker.version>0.4.13</maven.plugin.docker.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
+
+    <version.bom-connectorj>1.0.3-SNAPSHOT</version.bom-connectorj>
+    <version.bom-junit>1.0.4-SNAPSHOT</version.bom-junit>
+    <version.bom-lombok>1.0.3-SNAPSHOT</version.bom-lombok>
+    <version.bom-netty>1.0.2-SNAPSHOT</version.bom-netty>
+    <version.bom-scripting>1.0.2-SNAPSHOT</version.bom-scripting>
+    <version.bom-swt>1.0.3-SNAPSHOT</version.bom-swt>
+    <version.common-shared>1.0.5-SNAPSHOT</version.common-shared>
+    <version.common-client>1.0.4-SNAPSHOT</version.common-client>
+    <version.module-audio>1.0.5-SNAPSHOT</version.module-audio>
+    <version.module-audio-openal>1.0.4-SNAPSHOT</version.module-audio-openal>
+    <version.module-database>1.0.3-SNAPSHOT</version.module-database>
+    <version.module-graphic>1.1.2-SNAPSHOT</version.module-graphic>
+    <version.module-graphic-ogre>1.1.2-SNAPSHOT</version.module-graphic-ogre>
+    <version.module-network>1.0.2-SNAPSHOT</version.module-network>
+    <version.module-network-netty>1.0.2-SNAPSHOT</version.module-network-netty>
+    <version.module-physics>1.0.3-SNAPSHOT</version.module-physics>
+    <version.module-physics-bullet>1.0.4-SNAPSHOT</version.module-physics-bullet>
+    <version.module-scripting>1.0.2-SNAPSHOT</version.module-scripting>
+    <version.engine-shared>1.0.0-SNAPSHOT</version.engine-shared>
+    <version.engine-server>1.0.0-SNAPSHOT</version.engine-server>
+    <version.engine-client>1.0.0-SNAPSHOT</version.engine-client>
   </properties>
 
   <build>
@@ -401,6 +423,61 @@
       </plugin>
     </plugins>
   </build>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>common-shared</artifactId>
+        <version>${version.common-shared}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>common-client</artifactId>
+        <version>${version.common-client}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-audio</artifactId>
+        <version>${version.module-audio}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-audio-openal</artifactId>
+        <version>${version.module-audio-openal}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-graphic</artifactId>
+        <version>${version.module-graphic}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-graphic-ogre</artifactId>
+        <version>${version.module-graphic-ogre}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-network</artifactId>
+        <version>${version.module-network}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-network-netty</artifactId>
+        <version>${version.module-network-netty}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-physics</artifactId>
+        <version>${version.module-physics}</version>
+      </dependency>
+      <dependency>
+        <groupId>be.yildiz-games</groupId>
+        <artifactId>module-physics-bullet</artifactId>
+        <version>${version.module-physics-bullet}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <distributionManagement>
     <snapshotRepository>
