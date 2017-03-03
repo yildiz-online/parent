@@ -96,7 +96,7 @@
     <maven.plugin.doxygen.version>1.1.0</maven.plugin.doxygen.version>
     <maven.plugin.doxygen.output>${project.build.outputDirectory}/doxygen</maven.plugin.doxygen.output>
     <maven.plugin.sonar.version>3.2</maven.plugin.sonar.version>
-    <maven.plugin.jacoco.version>0.7.8</maven.plugin.jacoco.version>
+    <maven.plugin.jacoco.version>0.7.9</maven.plugin.jacoco.version>
     <maven.plugin.proguard.version>2.0.13</maven.plugin.proguard.version>
     <maven.plugin.launch4j.version>1.7.15</maven.plugin.launch4j.version>
     <maven.plugin.exec.version>1.5.0</maven.plugin.exec.version>
