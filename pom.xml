@@ -97,9 +97,9 @@
     <maven.plugin.doxygen.output>${project.build.outputDirectory}/doxygen</maven.plugin.doxygen.output>
     <maven.plugin.sonar.version>3.2</maven.plugin.sonar.version>
     <maven.plugin.jacoco.version>0.7.9</maven.plugin.jacoco.version>
-    <maven.plugin.proguard.version>2.0.13</maven.plugin.proguard.version>
+    <maven.plugin.proguard.version>2.0.14</maven.plugin.proguard.version>
     <maven.plugin.launch4j.version>1.7.15</maven.plugin.launch4j.version>
-    <maven.plugin.exec.version>1.5.0</maven.plugin.exec.version>
+    <maven.plugin.exec.version>1.6.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.0.0</maven.plugin.build-helper.version>
     <maven.plugin.pitest.version>1.1.11</maven.plugin.pitest.version>
     <maven.plugin.nexus.version>1.6.8</maven.plugin.nexus.version>
@@ -423,12 +423,12 @@
       <dependency>
         <groupId>org.jruby</groupId>
         <artifactId>jruby</artifactId>
-        <version>9.1.7.0</version>
+        <version>9.1.8.0</version>
       </dependency>
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-all</artifactId>
-        <version>4.1.8.Final</version>
+        <version>4.1.9.Final</version>
       </dependency>
       <dependency>
         <groupId>org.javassist</groupId>
@@ -438,7 +438,7 @@
       <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
-        <version>6.0.5</version>
+        <version>6.0.6</version>
       </dependency>
       <dependency>
         <groupId>com.googlecode.usc</groupId>
@@ -508,7 +508,7 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>2.7.12</version>
+        <version>2.7.16</version>
       </dependency>
       <dependency>
         <groupId>info.cukes</groupId>
