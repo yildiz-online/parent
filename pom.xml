@@ -98,7 +98,7 @@
     <maven.plugin.sonar.version>3.3.0.603</maven.plugin.sonar.version>
     <maven.plugin.jacoco.version>0.7.9</maven.plugin.jacoco.version>
     <maven.plugin.proguard.version>2.0.14</maven.plugin.proguard.version>
-    <maven.plugin.launch4j.version>1.7.15</maven.plugin.launch4j.version>
+    <maven.plugin.launch4j.version>1.7.16</maven.plugin.launch4j.version>
     <maven.plugin.exec.version>1.6.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.0.0</maven.plugin.build-helper.version>
     <maven.plugin.pitest.version>1.1.11</maven.plugin.pitest.version>
@@ -478,12 +478,12 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>1.7.24</version>
+        <version>1.7.25</version>
       </dependency>
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.2.1</version>
+        <version>1.2.2</version>
       </dependency>
       <dependency>
         <groupId>org.projectlombok</groupId>
@@ -508,7 +508,7 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>2.7.17</version>
+        <version>2.7.18</version>
       </dependency>
       <dependency>
         <groupId>info.cukes</groupId>
