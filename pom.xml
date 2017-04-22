@@ -61,10 +61,6 @@
   <packaging>pom</packaging>
   <inceptionYear>2009</inceptionYear>
 
-  <prerequisites>
-    <maven>3.3.0</maven>
-  </prerequisites>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
@@ -73,11 +69,11 @@
     <maven.plugin.clean.version>3.0.0</maven.plugin.clean.version>
     <maven.plugin.compiler.version>3.6.1</maven.plugin.compiler.version>
     <maven.plugin.deploy.version>2.8.2</maven.plugin.deploy.version>
-    <maven.plugin.failsafe.version>2.19.1</maven.plugin.failsafe.version>
+    <maven.plugin.failsafe.version>2.20</maven.plugin.failsafe.version>
     <maven.plugin.install.version>2.5.2</maven.plugin.install.version>
     <maven.plugin.resources.version>3.0.2</maven.plugin.resources.version>
     <maven.plugin.site.version>3.6</maven.plugin.site.version>
-    <maven.plugin.surefire.version>2.19.1</maven.plugin.surefire.version>
+    <maven.plugin.surefire.version>2.20</maven.plugin.surefire.version>
     <maven.plugin.verifier.version>1.1</maven.plugin.verifier.version>
 
     <maven.plugin.jar.version>3.0.2</maven.plugin.jar.version>
@@ -101,7 +97,7 @@
     <maven.plugin.launch4j.version>1.7.16</maven.plugin.launch4j.version>
     <maven.plugin.exec.version>1.6.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.0.0</maven.plugin.build-helper.version>
-    <maven.plugin.pitest.version>1.1.11</maven.plugin.pitest.version>
+    <maven.plugin.pitest.version>1.2.0</maven.plugin.pitest.version>
     <maven.plugin.nexus.version>1.6.8</maven.plugin.nexus.version>
     <maven.plugin.version.version>2.3</maven.plugin.version.version>
     <maven.plugin.jooq.version>3.9.1</maven.plugin.jooq.version>
@@ -383,6 +379,25 @@
           <artifactId>docker-maven-plugin</artifactId>
           <version>${maven.plugin.docker.version}</version>
         </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <version>${maven.plugin.enforcer.version}</version>
+          <executions>
+            <execution>
+              <id>enforce-maven</id>
+              <goals>
+                <goal>enforce</goal>
+              </goals>
+              <configuration>
+                <rules>
+                  <requireMavenVersion><version>3.3.0</version></requireMavenVersion>
+                </rules>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
       </plugins>
     </pluginManagement>
 
@@ -402,6 +417,10 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
@@ -491,7 +510,7 @@
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.2.2</version>
+        <version>1.2.3</version>
       </dependency>
       <dependency>
         <groupId>de.svenkubiak</groupId>
@@ -506,7 +525,7 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>2.7.19</version>
+        <version>2.7.22</version>
       </dependency>
       <dependency>
         <groupId>info.cukes</groupId>
