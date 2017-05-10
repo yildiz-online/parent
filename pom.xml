@@ -392,7 +392,13 @@
               </goals>
               <configuration>
                 <rules>
-                  <requireMavenVersion><version>3.2.5</version></requireMavenVersion>
+                  <requireMavenVersion>
+                    <version>3.2.5</version>
+                  </requireMavenVersion>
+                  <requireReleaseDeps>
+                    <onlyWhenRelease>true</onlyWhenRelease>
+                    <message>Snapshot dependencies are not allowed in releases.</message>
+                  </requireReleaseDeps>
                 </rules>
               </configuration>
             </execution>
