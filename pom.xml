@@ -327,6 +327,7 @@
           <version>${maven.plugin.javadoc.version}</version>
           <configuration>
             <excludePackageNames>*.generated.*</excludePackageNames>
+            <quiet>true</quiet>
           </configuration>
           <executions>
             <execution>
