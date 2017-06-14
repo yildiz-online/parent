@@ -1,3 +1,0 @@
-test:
-  post:
-    - curl -sSl https://download.sourclear.com/ci.sh | sh
