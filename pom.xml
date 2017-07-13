@@ -105,6 +105,8 @@
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
+    <dependency.swt.version>3.105.3</dependency.swt.version>
+
   </properties>
 
   <build>
@@ -437,7 +439,7 @@
       <dependency>
         <groupId>org.eclipse.platform</groupId>
         <artifactId>org.eclipse.swt.win32.win32.x86</artifactId>
-        <version>3.105.3</version>
+        <version>${dependency.swt.version}</version>
         <exclusions>
           <exclusion>
             <groupId>org.eclipse.platform</groupId>
@@ -448,7 +450,7 @@
       <dependency>
         <groupId>org.eclipse.platform</groupId>
         <artifactId>org.eclipse.swt.win32.win32.x86_64</artifactId>
-        <version>3.105.3</version>
+        <version>${dependency.swt.version}</version>
         <exclusions>
           <exclusion>
             <groupId>org.eclipse.platform</groupId>
@@ -459,7 +461,7 @@
       <dependency>
         <groupId>org.eclipse.platform</groupId>
         <artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
-        <version>3.105.3</version>
+        <version>${dependency.swt.version}</version>
         <exclusions>
           <exclusion>
             <groupId>org.eclipse.platform</groupId>
@@ -475,7 +477,7 @@
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-all</artifactId>
-        <version>4.1.12.Final</version>
+        <version>4.1.13.Final</version>
       </dependency>
       <dependency>
         <groupId>org.javassist</groupId>
