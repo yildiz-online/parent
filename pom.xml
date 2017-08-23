@@ -106,6 +106,7 @@
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
     <dependency.swt.version>3.105.3</dependency.swt.version>
+    <dependency.spring-boot.version>1.5.6.RELEASE</dependency.spring-boot.version>
 
   </properties>
 
@@ -364,6 +365,12 @@
         </plugin>
 
         <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${dependency.spring-boot.version}</version>
+        </plugin>
+
+        <plugin>
           <groupId>org.pitest</groupId>
           <artifactId>pitest-maven</artifactId>
           <version>${maven.plugin.pitest.version}</version>
@@ -543,6 +550,11 @@
         <groupId>de.svenkubiak</groupId>
         <artifactId>jBCrypt</artifactId>
         <version>0.4.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>${dependency.spring-boot.version}</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
