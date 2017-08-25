@@ -110,6 +110,7 @@
     <dependency.nodejs.version>v8.4.0</dependency.nodejs.version>
     <dependency.npm.version>5.3.0</dependency.npm.version>
     <dependency.logback.version>1.2.3</dependency.logback.version>
+    <dependency.rxjava.version>1.3.0</dependency.rxjava.version>
 
   </properties>
 
@@ -572,7 +573,7 @@
       <dependency>
         <groupId>io.reactivex</groupId>
         <artifactId>rxjava</artifactId>
-        <version>1.2.3</version>
+        <version>${dependency.rxjava.version}</version>
       </dependency>
       <dependency>
         <groupId>io.projectreactor</groupId>
