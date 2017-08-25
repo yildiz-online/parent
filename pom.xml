@@ -82,7 +82,7 @@
     <maven.plugin.javadoc.version>2.10.4</maven.plugin.javadoc.version>
 
     <maven.plugin.antrun.version>1.8</maven.plugin.antrun.version>
-    <maven.plugin.assembly.version>3.0.0</maven.plugin.assembly.version>
+    <maven.plugin.assembly.version>3.1.0</maven.plugin.assembly.version>
     <maven.plugin.dependency.version>3.0.1</maven.plugin.dependency.version>
     <maven.plugin.enforcer.version>1.4.1</maven.plugin.enforcer.version>
     <maven.plugin.gpg.version>1.6</maven.plugin.gpg.version>
@@ -552,7 +552,7 @@
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.2.3</version>
+        <version>${dependency.logback.version}</version>
       </dependency>
       <dependency>
         <groupId>de.svenkubiak</groupId>
@@ -578,11 +578,6 @@
         <groupId>io.projectreactor</groupId>
         <artifactId>reactor-net</artifactId>
         <version>2.0.8.RELEASE</version>
-      </dependency>
-      <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-classic</artifactId>
-        <version>1.2.3</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
