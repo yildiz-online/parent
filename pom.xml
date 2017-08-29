@@ -111,6 +111,7 @@
     <dependency.npm.version>5.3.0</dependency.npm.version>
     <dependency.logback.version>1.2.3</dependency.logback.version>
     <dependency.rxjava.version>1.3.0</dependency.rxjava.version>
+    <dependency.netty.version>4.1.15.Final</dependency.netty.version>
 
   </properties>
 
@@ -493,7 +494,7 @@
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-all</artifactId>
-        <version>4.1.14.Final</version>
+        <version>${dependency.netty.version}</version>
       </dependency>
       <dependency>
         <groupId>org.javassist</groupId>
