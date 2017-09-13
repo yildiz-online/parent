@@ -112,6 +112,7 @@
     <dependency.logback.version>1.2.3</dependency.logback.version>
     <dependency.rxjava.version>1.3.0</dependency.rxjava.version>
     <dependency.netty.version>4.1.15.Final</dependency.netty.version>
+    <dependency.jruby.version>9.1.13.0</dependency.jruby.version>
     <dependency.mockito.version>2.10.0</dependency.mockito.version>
 
   </properties>
@@ -490,7 +491,7 @@
       <dependency>
         <groupId>org.jruby</groupId>
         <artifactId>jruby</artifactId>
-        <version>9.1.12.0</version>
+        <version>${dependency.jruby.version}</version>
       </dependency>
       <dependency>
         <groupId>io.netty</groupId>
