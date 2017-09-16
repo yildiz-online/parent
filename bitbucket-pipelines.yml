@@ -3,6 +3,11 @@ image: moussavdb/yildiz-build-image
 pipelines:
   default:
     - step:
+      script:
+        - mvn -s settings.xml package
+  branches:
+    master:
+      - step:
         script:
           - openssl aes-256-cbc -pass pass:$OPENSSL_PWD -in private-key.gpg.enc -out private-key.gpg -d
           - gpg --import private-key.gpg
