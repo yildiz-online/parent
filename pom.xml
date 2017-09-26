@@ -106,7 +106,7 @@
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
     <dependency.swt.version>3.105.3</dependency.swt.version>
-    <dependency.spring-boot.version>1.5.6.RELEASE</dependency.spring-boot.version>
+    <dependency.spring-boot.version>1.5.7.RELEASE</dependency.spring-boot.version>
     <dependency.nodejs.version>v8.4.0</dependency.nodejs.version>
     <dependency.npm.version>5.3.0</dependency.npm.version>
     <dependency.logback.version>1.2.3</dependency.logback.version>
