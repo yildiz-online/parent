@@ -99,6 +99,9 @@
     <maven.plugin.build-helper.version>3.0.0</maven.plugin.build-helper.version>
     <maven.plugin.pitest.version>1.2.4</maven.plugin.pitest.version>
     <maven.plugin.nexus.version>1.6.8</maven.plugin.nexus.version>
+    <maven.plugin.nexus.serverId>ossrh</maven.plugin.nexus.serverId>
+    <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
+    <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.5</maven.plugin.version.version>
     <maven.plugin.jooq.version>3.10.0</maven.plugin.jooq.version>
     <maven.plugin.docker.version>1.0.0</maven.plugin.docker.version>
@@ -326,9 +329,9 @@
           <version>${maven.plugin.nexus.version}</version>
           <extensions>true</extensions>
           <configuration>
-            <serverId>ossrh</serverId>
-            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            <serverId>${maven.plugin.nexus.serverId}</serverId>
+            <nexusUrl>${maven.plugin.nexus.nexusUrl}</nexusUrl>
+            <autoReleaseAfterClose>${maven.plugin.nexus.autoReleaseAfterClose}</autoReleaseAfterClose>
           </configuration>
         </plugin>
 
