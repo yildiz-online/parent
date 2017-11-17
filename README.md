@@ -9,7 +9,7 @@ This module is mostly used for build configuration, it contains only the Maven P
 
 ### Informations ###
 
-* Additional informations on https://yildiz-games.be
+* Additional informations on https://yildiz-games.be/engine
 
 ### Build ###
 
