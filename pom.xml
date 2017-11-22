@@ -484,6 +484,14 @@
           <groupId>com.gemnasium</groupId>
           <artifactId>gemnasium-maven-plugin</artifactId>
           <version>0.2.0</version>
+          <executions>
+            <execution>
+              <phase>verify</phase>
+              <goals>
+                <goal>send-dependencies</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>
