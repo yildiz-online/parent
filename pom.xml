@@ -618,11 +618,6 @@
         <version>${dependency.logback.version}</version>
       </dependency>
       <dependency>
-        <groupId>de.svenkubiak</groupId>
-        <artifactId>jBCrypt</artifactId>
-        <version>0.4.1</version>
-      </dependency>
-      <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-web</artifactId>
         <version>${dependency.spring-boot.version}</version>
