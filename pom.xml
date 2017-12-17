@@ -125,6 +125,10 @@
     <dependency.mockito.version>2.11.0</dependency.mockito.version>
   </properties>
 
+  <prerequisites>
+    <maven>3.3.9</maven>
+  </prerequisites>
+
   <build>
     <pluginManagement>
       <plugins>
@@ -452,7 +456,7 @@
               <configuration>
                 <rules>
                   <requireMavenVersion>
-                    <version>3.3.1</version>
+                    <version>3.3.9</version>
                   </requireMavenVersion>
                   <requireReleaseDeps>
                     <onlyWhenRelease>true</onlyWhenRelease>
