@@ -115,8 +115,8 @@
     <dependency.logback.version>1.2.3</dependency.logback.version>
     <dependency.netty.version>4.1.16.Final</dependency.netty.version>
     <dependency.jruby.version>9.1.13.0</dependency.jruby.version>
-    <dependency.junit.version>5.0.1</dependency.junit.version>
-    <dependency.junit-platform.version>1.0.1</dependency.junit-platform.version>
+    <dependency.junit.version>5.0.2</dependency.junit.version>
+    <dependency.junit-platform.version>1.0.2</dependency.junit-platform.version>
     <dependency.mockito.version>2.13.0</dependency.mockito.version>
   </properties>
 
