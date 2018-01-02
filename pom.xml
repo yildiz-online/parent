@@ -535,11 +535,6 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.jruby</groupId>
-        <artifactId>jruby</artifactId>
-        <version>${dependency.jruby.version}</version>
-      </dependency>
-      <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-all</artifactId>
         <version>${dependency.netty.version}</version>
@@ -548,21 +543,6 @@
         <groupId>org.javassist</groupId>
         <artifactId>javassist</artifactId>
         <version>3.21.0-GA</version>
-      </dependency>
-      <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>6.0.6</version>
-      </dependency>
-      <dependency>
-        <groupId>org.postgresql</groupId>
-        <artifactId>postgresql</artifactId>
-        <version>42.1.4</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.derby</groupId>
-        <artifactId>derby</artifactId>
-        <version>10.13.1.1</version>
       </dependency>
       <dependency>
         <groupId>org.jooq</groupId>
