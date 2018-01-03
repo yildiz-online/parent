@@ -530,11 +530,6 @@
         <version>${dependency.logback.version}</version>
       </dependency>
       <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.12</version>
-      </dependency>
-      <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
         <version>${dependency.junit.version}</version>
@@ -548,21 +543,6 @@
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
         <version>${dependency.mockito.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>info.cukes</groupId>
-        <artifactId>cucumber-java</artifactId>
-        <version>1.2.5</version>
-      </dependency>
-      <dependency>
-        <groupId>info.cukes</groupId>
-        <artifactId>cucumber-picocontainer</artifactId>
-        <version>1.2.5</version>
-      </dependency>
-      <dependency>
-        <groupId>info.cukes</groupId>
-        <artifactId>cucumber-junit</artifactId>
-        <version>1.2.5</version>
       </dependency>
       <dependency>
         <groupId>io.cucumber</groupId>
