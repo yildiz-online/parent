@@ -150,11 +150,8 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven.plugin.compiler.version}</version>
           <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
-            <!--Uncomment to move to java 9, and remove source and target-->
-            <!--<jdkToolchain><version>9</version></jdkToolchain>
-            <release>9</release>-->
+            <jdkToolchain><version>9</version></jdkToolchain>
+            <release>9</release>
           </configuration>
         </plugin>
 
