@@ -73,7 +73,7 @@
     <maven.plugin.failsafe.version>2.19.1</maven.plugin.failsafe.version>
     <maven.plugin.install.version>2.5.2</maven.plugin.install.version>
     <maven.plugin.resources.version>3.0.2</maven.plugin.resources.version>
-    <maven.plugin.site.version>3.6</maven.plugin.site.version>
+    <maven.plugin.site.version>3.7</maven.plugin.site.version>
     <maven.plugin.surefire.version>2.19.1</maven.plugin.surefire.version>
     <maven.plugin.verifier.version>1.1</maven.plugin.verifier.version>
 
@@ -93,12 +93,12 @@
     <maven.plugin.doxygen.version>1.1.0</maven.plugin.doxygen.version>
     <maven.plugin.doxygen.output>${project.build.outputDirectory}/doxygen</maven.plugin.doxygen.output>
     <maven.plugin.sonar.version>3.4.0.905</maven.plugin.sonar.version>
-    <maven.plugin.jacoco.version>0.7.9</maven.plugin.jacoco.version>
+    <maven.plugin.jacoco.version>0.8.0</maven.plugin.jacoco.version>
     <maven.plugin.proguard.version>2.0.14</maven.plugin.proguard.version>
     <maven.plugin.launch4j.version>1.7.21</maven.plugin.launch4j.version>
     <maven.plugin.exec.version>1.6.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.0.0</maven.plugin.build-helper.version>
-    <maven.plugin.pitest.version>1.2.4</maven.plugin.pitest.version>
+    <maven.plugin.pitest.version>1.3.2</maven.plugin.pitest.version>
     <maven.plugin.nexus.version>1.6.8</maven.plugin.nexus.version>
     <maven.plugin.nexus.serverId>ossrh</maven.plugin.nexus.serverId>
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
@@ -107,7 +107,7 @@
     <maven.plugin.jooq.version>3.10.0</maven.plugin.jooq.version>
     <maven.plugin.docker.version>1.0.0</maven.plugin.docker.version>
     <maven.plugin.docker-image.version>1.3.6</maven.plugin.docker-image.version>
-    <maven.plugin.owasp-dependency-check.version>3.0.2</maven.plugin.owasp-dependency-check.version>
+    <maven.plugin.owasp-dependency-check.version>3.1.1</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
@@ -398,18 +398,12 @@
           <version>${maven.plugin.pitest.version}</version>
           <configuration>
             <targetClasses>
-              <param>be.yildiz.*</param>
+              <param>be.yildizgames.*</param>
             </targetClasses>
             <targetTests>
-              <param>be.yildiz.*</param>
+              <param>be.yildizgames.*</param>
             </targetTests>
           </configuration>
-        </plugin>
-
-        <plugin>
-          <groupId>com.spotify</groupId>
-          <artifactId>docker-maven-plugin</artifactId>
-          <version>${maven.plugin.docker.version}</version>
         </plugin>
 
         <plugin>
@@ -557,17 +551,17 @@
       <dependency>
         <groupId>io.cucumber</groupId>
         <artifactId>cucumber-java</artifactId>
-        <version>2.0.1</version>
+        <version>2.1.0</version>
       </dependency>
       <dependency>
         <groupId>io.cucumber</groupId>
         <artifactId>cucumber-picocontainer</artifactId>
-        <version>2.0.1</version>
+        <version>2.1.0</version>
       </dependency>
       <dependency>
         <groupId>io.cucumber</groupId>
         <artifactId>cucumber-junit</artifactId>
-        <version>2.0.1</version>
+        <version>2.1.0</version>
       </dependency>
       <dependency>
         <groupId>com.jayway.awaitility</groupId>
