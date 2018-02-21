@@ -94,8 +94,6 @@
     <maven.plugin.doxygen.output>${project.build.outputDirectory}/doxygen</maven.plugin.doxygen.output>
     <maven.plugin.sonar.version>3.4.0.905</maven.plugin.sonar.version>
     <maven.plugin.jacoco.version>0.8.0</maven.plugin.jacoco.version>
-    <maven.plugin.proguard.version>2.0.14</maven.plugin.proguard.version>
-    <maven.plugin.launch4j.version>1.7.21</maven.plugin.launch4j.version>
     <maven.plugin.exec.version>1.6.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.0.0</maven.plugin.build-helper.version>
     <maven.plugin.pitest.version>1.3.2</maven.plugin.pitest.version>
@@ -105,7 +103,6 @@
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.5</maven.plugin.version.version>
     <maven.plugin.jooq.version>3.10.0</maven.plugin.jooq.version>
-    <maven.plugin.docker.version>1.0.0</maven.plugin.docker.version>
     <maven.plugin.docker-image.version>1.3.6</maven.plugin.docker-image.version>
     <maven.plugin.owasp-dependency-check.version>3.1.1</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
@@ -264,18 +261,6 @@
           <groupId>org.sonarsource.scanner.maven</groupId>
           <artifactId>sonar-maven-plugin</artifactId>
           <version>${maven.plugin.sonar.version}</version>
-        </plugin>
-
-        <plugin>
-          <groupId>com.github.wvengen</groupId>
-          <artifactId>proguard-maven-plugin</artifactId>
-          <version>${maven.plugin.proguard.version}</version>
-        </plugin>
-
-        <plugin>
-          <groupId>com.akathist.maven.plugins.launch4j</groupId>
-          <artifactId>launch4j-maven-plugin</artifactId>
-          <version>${maven.plugin.launch4j.version}</version>
         </plugin>
 
         <plugin>
@@ -460,21 +445,6 @@
               <goals>
                 <goal>check</goal>
               </goals>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <groupId>pl.project13.maven</groupId>
-          <artifactId>git-commit-id-plugin</artifactId>
-          <version>2.2.4</version>
-          <executions>
-            <execution>
-              <id>get-git-info</id>
-              <goals><goal>revision</goal></goals>
-              <configuration>
-                <dateFormatTimeZone>UTC</dateFormatTimeZone>
-                <generateGitPropertiesFile>true</generateGitPropertiesFile>
-              </configuration>
             </execution>
           </executions>
         </plugin>
