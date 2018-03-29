@@ -1,7 +1,7 @@
 <!--
   ~ This file is part of the Yildiz-Engine project, licenced under the MIT License  (MIT)
   ~
-  ~  Copyright (c) 2018 Grégory Van den Borre
+  ~  Copyright (c) 2018 Grï¿½gory Van den Borre
   ~
   ~  More infos available: https://www.yildiz-games.be
   ~
@@ -43,7 +43,7 @@
 
   <developers>
     <developer>
-      <name>Grégory Van den Borre</name>
+      <name>GrÃ©gory Van den Borre</name>
       <email>vandenborre.gregory@hotmail.fr</email>
       <url>https://bitbucket.org/yildiz/</url>
     </developer>
@@ -70,11 +70,11 @@
     <maven.plugin.clean.version>3.0.0</maven.plugin.clean.version>
     <maven.plugin.compiler.version>3.7.0</maven.plugin.compiler.version>
     <maven.plugin.deploy.version>2.8.2</maven.plugin.deploy.version>
-    <maven.plugin.failsafe.version>2.19.1</maven.plugin.failsafe.version>
+    <maven.plugin.failsafe.version>2.21.0</maven.plugin.failsafe.version>
     <maven.plugin.install.version>2.5.2</maven.plugin.install.version>
     <maven.plugin.resources.version>3.0.2</maven.plugin.resources.version>
     <maven.plugin.site.version>3.7</maven.plugin.site.version>
-    <maven.plugin.surefire.version>2.19.1</maven.plugin.surefire.version>
+    <maven.plugin.surefire.version>2.21.0</maven.plugin.surefire.version>
     <maven.plugin.verifier.version>1.1</maven.plugin.verifier.version>
 
     <maven.plugin.jar.version>3.0.2</maven.plugin.jar.version>
