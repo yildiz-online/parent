@@ -196,7 +196,7 @@
           <version>${maven.plugin.surefire.version}</version>
           <configuration>
             <forkCount>1</forkCount>
-            <reuseForks>false</reuseForks>
+            <reuseForks>true</reuseForks>
           </configuration>
         </plugin>
 
