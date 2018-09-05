@@ -450,13 +450,8 @@
     <dependencies>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
+        <artifactId>junit-jupiter-engine</artifactId>
         <version>${dependency.junit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.platform</groupId>
-        <artifactId>junit-platform-launcher</artifactId>
-        <version>${dependency.junit-platform.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
