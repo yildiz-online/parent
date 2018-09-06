@@ -1,4 +1,4 @@
-<!--
+!--
   ~ This file is part of the Yildiz-Engine project, licenced under the MIT License  (MIT)
   ~
   ~  Copyright (c) 2018 Gregory Van den Borre
@@ -72,11 +72,11 @@
     <maven.plugin.clean.version>3.1.0</maven.plugin.clean.version>
     <maven.plugin.compiler.version>3.8.0</maven.plugin.compiler.version>
     <maven.plugin.deploy.version>2.8.2</maven.plugin.deploy.version>
-    <maven.plugin.failsafe.version>2.22.0</maven.plugin.failsafe.version>
+    <maven.plugin.failsafe.version>2.19.1</maven.plugin.failsafe.version>
     <maven.plugin.install.version>2.5.2</maven.plugin.install.version>
     <maven.plugin.resources.version>3.1.0</maven.plugin.resources.version>
     <maven.plugin.site.version>3.7.1</maven.plugin.site.version>
-    <maven.plugin.surefire.version>2.22.0</maven.plugin.surefire.version>
+    <maven.plugin.surefire.version>2.19.1</maven.plugin.surefire.version>
     <maven.plugin.verifier.version>1.1</maven.plugin.verifier.version>
 
     <maven.plugin.jar.version>3.1.0</maven.plugin.jar.version>
@@ -110,7 +110,8 @@
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
-    <dependency.junit.version>5.3.0</dependency.junit.version>
+    <dependency.junit.version>5.1.0</dependency.junit.version>
+    <dependency.junit-platform.version>1.1.0</dependency.junit-platform.version>
     <dependency.mockito.version>2.19.0</dependency.mockito.version>
     <dependency.cucumber.version>3.0.2</dependency.cucumber.version>
   </properties>
@@ -198,6 +199,18 @@
             <forkCount>1</forkCount>
             <reuseForks>false</reuseForks>
           </configuration>
+          <dependencies>
+            <dependency>
+              <groupId>org.junit.platform</groupId>
+              <artifactId>junit-platform-surefire-provider</artifactId>
+              <version>${dependency.junit-platform.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.junit.jupiter</groupId>
+              <artifactId>junit-jupiter-engine</artifactId>
+              <version>${dependency.junit.version}</version>
+            </dependency>
+          </dependencies>
         </plugin>
 
         <plugin>
@@ -454,8 +467,13 @@
     <dependencies>
       <dependency>
         <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
+        <artifactId>junit-jupiter-api</artifactId>
         <version>${dependency.junit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-launcher</artifactId>
+        <version>${dependency.junit-platform.version}</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
