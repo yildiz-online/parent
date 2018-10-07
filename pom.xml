@@ -320,15 +320,6 @@
             <nexusUrl>${maven.plugin.nexus.nexusUrl}</nexusUrl>
             <autoReleaseAfterClose>${maven.plugin.nexus.autoReleaseAfterClose}</autoReleaseAfterClose>
           </configuration>
-          <executions>
-            <execution>
-              <id>default-deploy</id>
-              <phase>deploy</phase>
-              <goals>
-                <goal>deploy</goal>
-              </goals>
-            </execution>
-          </executions>
         </plugin>
 
         <plugin>
