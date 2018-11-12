@@ -105,7 +105,7 @@
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.5</maven.plugin.version.version>
     <maven.plugin.jooq.version>3.11.2</maven.plugin.jooq.version>
-    <maven.plugin.docker-image.version>1.4.3</maven.plugin.docker-image.version>
+    <maven.plugin.docker-image.version>1.4.8</maven.plugin.docker-image.version>
     <maven.plugin.owasp-dependency-check.version>3.3.0</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
