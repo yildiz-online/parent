@@ -10,4 +10,5 @@ before_install:
   - docker pull moussavdb/build-java
 
 script:
-- docker run -v $PWD:/src -e GIT_USER=$GIT_USER -e GIT_PWD=$GIT_PWD -e OPENSSL_PWD=$OPENSSL_PWD -e GPG_PWD=$GPG_PWD -e GPG_KEY=$GPG_KEY -e OSSRH_USER_TOKEN=$OSSRH_USER_TOKEN -e OSSRH_PWD_TOKEN=$OSSRH_PWD_TOKEN -e SONAR=$SONAR -e SONAR_ORGANIZATION=$SONAR_ORGANIZATION moussavdb/build-java ./deploy-maven-central.sh
+  - chmod 777 deploy-maven-central.sh
+  - docker run -v $PWD:/src -e GIT_USER=$GIT_USER -e GIT_PWD=$GIT_PWD -e OPENSSL_PWD=$OPENSSL_PWD -e GPG_PWD=$GPG_PWD -e GPG_KEY=$GPG_KEY -e OSSRH_USER_TOKEN=$OSSRH_USER_TOKEN -e OSSRH_PWD_TOKEN=$OSSRH_PWD_TOKEN -e SONAR=$SONAR -e SONAR_ORGANIZATION=$SONAR_ORGANIZATION moussavdb/build-java ./deploy-maven-central.sh
