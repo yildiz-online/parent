@@ -106,7 +106,6 @@
     <maven.plugin.jooq.version>3.11.7</maven.plugin.jooq.version>
     <maven.plugin.docker-image.version>1.4.9</maven.plugin.docker-image.version>
     <maven.plugin.owasp-dependency-check.version>3.3.4</maven.plugin.owasp-dependency-check.version>
-    <maven.plugin.nexus.active>true</maven.plugin.nexus.active>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
@@ -542,8 +541,7 @@
       <id>deploy-to-central</id>
       <activation>
         <property>
-          <name>maven.plugin.nexus.active</name>
-          <value>true</value>
+          <name>!maven.plugin.nexus.skip</name>
         </property>
       </activation>
       <build>
