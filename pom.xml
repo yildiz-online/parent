@@ -106,6 +106,7 @@
     <maven.plugin.jooq.version>3.11.7</maven.plugin.jooq.version>
     <maven.plugin.docker-image.version>1.4.9</maven.plugin.docker-image.version>
     <maven.plugin.owasp-dependency-check.version>3.3.4</maven.plugin.owasp-dependency-check.version>
+    <maven.plugin.nexus.active>true</maven.plugin.nexus.active>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
@@ -113,6 +114,8 @@
     <dependency.junit-platform.version>1.1.0</dependency.junit-platform.version>
     <dependency.mockito.version>2.23.4</dependency.mockito.version>
     <dependency.cucumber.version>4.2.0</dependency.cucumber.version>
+
+
   </properties>
 
   <prerequisites>
@@ -478,22 +481,6 @@
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-gpg-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
       </plugin>
     </plugins>
@@ -551,6 +538,35 @@
   </distributionManagement>
 
   <profiles>
+    <profile>
+      <id>deploy-to-central</id>
+      <activation>
+        <property>
+          <name>maven.plugin.nexus.active</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+          </plugin>
+          <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
     <profile>
       <id>owasp</id>
       <build>
