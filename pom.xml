@@ -185,6 +185,8 @@
             <argLine>
               --illegal-access=permit
             </argLine>
+            <forkCount>0</forkCount>
+            <useSystemClassLoader>false</useSystemClassLoader>
           </configuration>
         </plugin>
 
@@ -208,6 +210,8 @@
             <argLine>
               --illegal-access=permit
             </argLine>
+            <forkCount>0</forkCount>
+            <useSystemClassLoader>false</useSystemClassLoader>
           </configuration>
         </plugin>
 
