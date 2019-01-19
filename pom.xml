@@ -540,7 +540,7 @@
       <id>deploy-to-private</id>
       <activation>
         <property>
-          <name>!maven.plugin.nexus.skip</name>
+          <name>maven.plugin.nexus.skip</name>
         </property>
       </activation>
       <distributionManagement>
