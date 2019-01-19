@@ -181,6 +181,11 @@
               </goals>
             </execution>
           </executions>
+          <configuration>
+            <argLine>
+              --illegal-access=permit
+            </argLine>
+          </configuration>
         </plugin>
 
         <plugin>
@@ -200,7 +205,9 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${maven.plugin.surefire.version}</version>
           <configuration>
-            <forkCount>0</forkCount>
+            <argLine>
+              --illegal-access=permit
+            </argLine>
           </configuration>
         </plugin>
 
