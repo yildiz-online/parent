@@ -1,7 +1,7 @@
 <!--
   ~ This file is part of the Yildiz-Engine project, licenced under the MIT License  (MIT)
   ~
-  ~  Copyright (c) 2018 Grégory Van den Borre
+  ~  Copyright (c) 2019 Grégory Van den Borre
   ~
   ~  More infos available: https://www.yildiz-games.be
   ~
@@ -26,7 +26,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>3.0.1</version>
+  <version>3.0.2</version>
 
   <name>Yildiz Parent</name>
   <description>Project to hold the parent pom for all children projects.</description>
@@ -353,6 +353,13 @@
               </goals>
             </execution>
           </executions>
+          <dependencies>
+            <dependency>
+              <groupId>org.ow2.asm</groupId>
+              <artifactId>asm</artifactId>
+              <version>7.0</version>
+            </dependency>
+          </dependencies>
         </plugin>
 
         <plugin>
