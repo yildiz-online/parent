@@ -118,6 +118,7 @@
     <dependency.mockito.version>2.23.4</dependency.mockito.version>
     <dependency.cucumber.version>4.2.2</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
+    <argLine>--illegal-access=permit</argLine>
   </properties>
 
   <prerequisites>
@@ -182,9 +183,6 @@
             </execution>
           </executions>
           <configuration>
-            <argLine>
-              --illegal-access=permit
-            </argLine>
             <forkCount>0</forkCount>
             <useSystemClassLoader>false</useSystemClassLoader>
           </configuration>
@@ -207,9 +205,6 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>${maven.plugin.surefire.version}</version>
           <configuration>
-            <argLine>
-              --illegal-access=permit
-            </argLine>
             <forkCount>0</forkCount>
             <useSystemClassLoader>false</useSystemClassLoader>
           </configuration>
