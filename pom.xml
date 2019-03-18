@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!--
   ~ This file is part of the Yildiz-Engine project, licenced under the MIT License  (MIT)
   ~
@@ -95,8 +97,6 @@
     <maven.plugin.release.version>2.5.3</maven.plugin.release.version>
     <maven.plugin.scm.version>1.11.1</maven.plugin.scm.version>
 
-    <maven.plugin.doxygen.version>1.1.0</maven.plugin.doxygen.version>
-    <maven.plugin.doxygen.output>${project.build.outputDirectory}/doxygen</maven.plugin.doxygen.output>
     <maven.plugin.sonar.version>3.6.0.1398</maven.plugin.sonar.version>
     <maven.plugin.jacoco.version>0.8.3</maven.plugin.jacoco.version>
     <maven.plugin.exec.version>1.6.0</maven.plugin.exec.version>
@@ -113,7 +113,6 @@
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
     <dependency.junit.version>5.4.0</dependency.junit.version>
-    <dependency.mockito.version>2.25.0</dependency.mockito.version>
     <dependency.cucumber.version>4.2.5</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
 
@@ -250,34 +249,6 @@
         </plugin>
 
         <plugin>
-          <groupId>com.soebes.maven.plugins</groupId>
-          <artifactId>doxygen-maven-plugin</artifactId>
-          <version>${maven.plugin.doxygen.version}</version>
-          <configuration>
-            <projectName>${project.name}</projectName>
-            <projectNumber>${project.version}</projectNumber>
-            <input>${project.build.sourceDirectory}</input>
-            <optimizeOutputJava>true</optimizeOutputJava>
-            <extractPrivate>true</extractPrivate>
-            <extractStatic>true</extractStatic>
-            <showFiles>false</showFiles>
-            <sourceBrowser>false</sourceBrowser>
-            <tabSize>4</tabSize>
-            <htmlOutput>${maven.plugin.doxygen.output}</htmlOutput>
-            <reportOutputDirectory>${maven.plugin.doxygen.output}</reportOutputDirectory>
-            <haveDot>true</haveDot>
-            <recursive>true</recursive>
-            <generateTreeview>NONE</generateTreeview>
-            <quiet>false</quiet>
-            <callGraph>true</callGraph>
-            <callerGraph>true</callerGraph>
-            <extractAll>true</extractAll>
-            <extractPrivate>true</extractPrivate>
-            <extractStatic>true</extractStatic>
-          </configuration>
-        </plugin>
-
-        <plugin>
           <artifactId>exec-maven-plugin</artifactId>
           <groupId>org.codehaus.mojo</groupId>
           <version>${maven.plugin.exec.version}</version>
@@ -390,12 +361,13 @@
               <configuration>
                 <rules>
                   <requireMavenVersion>
-                    <version>3.3.9</version>
+                    <version>3.5.2</version>
                   </requireMavenVersion>
                   <requireReleaseDeps>
                     <onlyWhenRelease>true</onlyWhenRelease>
                     <message>Snapshot dependencies are not allowed in releases.</message>
                   </requireReleaseDeps>
+                  <dependencyConvergence/>
                 </rules>
               </configuration>
             </execution>
