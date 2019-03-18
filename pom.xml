@@ -1,9 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!--
   ~ This file is part of the Yildiz-Engine project, licenced under the MIT License  (MIT)
   ~
   ~  Copyright (c) 2019 Grégory Van den Borre
   ~
-  ~  More infos available: https://www.yildiz-games.be
+  ~  More infos available: https://engine.yildiz-games.be
   ~
   ~  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
   ~  documentation files (the "Software"), to deal in the Software without restriction, including without
@@ -26,7 +28,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>3.0.4</version>
+  <version>3.0.5</version>
 
   <name>Yildiz Parent</name>
   <description>Project to hold the parent pom for all children projects.</description>
@@ -85,7 +87,7 @@
     <maven.plugin.jar.version>3.1.1</maven.plugin.jar.version>
     <maven.plugin.source.version>3.0.1</maven.plugin.source.version>
 
-    <maven.plugin.javadoc.version>3.0.1</maven.plugin.javadoc.version>
+    <maven.plugin.javadoc.version>3.1.0</maven.plugin.javadoc.version>
 
     <maven.plugin.antrun.version>1.8</maven.plugin.antrun.version>
     <maven.plugin.assembly.version>3.1.1</maven.plugin.assembly.version>
@@ -95,26 +97,24 @@
     <maven.plugin.release.version>2.5.3</maven.plugin.release.version>
     <maven.plugin.scm.version>1.11.1</maven.plugin.scm.version>
 
-    <maven.plugin.doxygen.version>1.1.0</maven.plugin.doxygen.version>
-    <maven.plugin.doxygen.output>${project.build.outputDirectory}/doxygen</maven.plugin.doxygen.output>
     <maven.plugin.sonar.version>3.6.0.1398</maven.plugin.sonar.version>
     <maven.plugin.jacoco.version>0.8.3</maven.plugin.jacoco.version>
     <maven.plugin.exec.version>1.6.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.0.0</maven.plugin.build-helper.version>
-    <maven.plugin.pitest.version>1.4.5</maven.plugin.pitest.version>
+    <maven.plugin.pitest.version>1.4.6</maven.plugin.pitest.version>
     <maven.plugin.nexus.version>1.6.8</maven.plugin.nexus.version>
     <maven.plugin.nexus.serverId>ossrh</maven.plugin.nexus.serverId>
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.7</maven.plugin.version.version>
-    <maven.plugin.jooq.version>3.11.9</maven.plugin.jooq.version>
+    <maven.plugin.jooq.version>3.11.10</maven.plugin.jooq.version>
     <maven.plugin.owasp-dependency-check.version>4.0.2</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
-    <dependency.junit.version>5.4.0</dependency.junit.version>
-    <dependency.mockito.version>2.24.0</dependency.mockito.version>
-    <dependency.cucumber.version>4.2.2</dependency.cucumber.version>
+    <dependency.junit.version>5.4.1</dependency.junit.version>
+    <dependency.mockito.version>2.25.0</dependency.mockito.version>
+    <dependency.cucumber.version>4.2.5</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
 
     <argLine>--illegal-access=permit</argLine>
@@ -250,34 +250,6 @@
         </plugin>
 
         <plugin>
-          <groupId>com.soebes.maven.plugins</groupId>
-          <artifactId>doxygen-maven-plugin</artifactId>
-          <version>${maven.plugin.doxygen.version}</version>
-          <configuration>
-            <projectName>${project.name}</projectName>
-            <projectNumber>${project.version}</projectNumber>
-            <input>${project.build.sourceDirectory}</input>
-            <optimizeOutputJava>true</optimizeOutputJava>
-            <extractPrivate>true</extractPrivate>
-            <extractStatic>true</extractStatic>
-            <showFiles>false</showFiles>
-            <sourceBrowser>false</sourceBrowser>
-            <tabSize>4</tabSize>
-            <htmlOutput>${maven.plugin.doxygen.output}</htmlOutput>
-            <reportOutputDirectory>${maven.plugin.doxygen.output}</reportOutputDirectory>
-            <haveDot>true</haveDot>
-            <recursive>true</recursive>
-            <generateTreeview>NONE</generateTreeview>
-            <quiet>false</quiet>
-            <callGraph>true</callGraph>
-            <callerGraph>true</callerGraph>
-            <extractAll>true</extractAll>
-            <extractPrivate>true</extractPrivate>
-            <extractStatic>true</extractStatic>
-          </configuration>
-        </plugin>
-
-        <plugin>
           <artifactId>exec-maven-plugin</artifactId>
           <groupId>org.codehaus.mojo</groupId>
           <version>${maven.plugin.exec.version}</version>
@@ -331,7 +303,7 @@
             <dependency>
               <groupId>org.ow2.asm</groupId>
               <artifactId>asm</artifactId>
-              <version>7.0</version>
+              <version>7.1</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -390,12 +362,13 @@
               <configuration>
                 <rules>
                   <requireMavenVersion>
-                    <version>3.3.9</version>
+                    <version>3.5.2</version>
                   </requireMavenVersion>
                   <requireReleaseDeps>
                     <onlyWhenRelease>true</onlyWhenRelease>
                     <message>Snapshot dependencies are not allowed in releases.</message>
                   </requireReleaseDeps>
+                  <dependencyConvergence/>
                 </rules>
               </configuration>
             </execution>
