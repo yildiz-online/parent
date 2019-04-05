@@ -289,6 +289,7 @@
           <configuration>
             <excludePackageNames>*.generated.*</excludePackageNames>
             <quiet>true</quiet>
+            <encoding>UTF-8</encoding>
           </configuration>
           <executions>
             <execution>
