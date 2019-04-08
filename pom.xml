@@ -112,7 +112,7 @@
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
-    <dependency.junit.version>5.4.1</dependency.junit.version>
+    <dependency.junit.version>5.4.2</dependency.junit.version>
     <dependency.mockito.version>2.25.1</dependency.mockito.version>
     <dependency.cucumber.version>4.2.5</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
