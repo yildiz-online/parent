@@ -113,7 +113,7 @@
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
     <dependency.junit.version>5.4.2</dependency.junit.version>
-    <dependency.mockito.version>2.26.0</dependency.mockito.version>
+    <dependency.mockito.version>2.27.0</dependency.mockito.version>
     <dependency.cucumber.version>4.3.1</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
 
