@@ -98,7 +98,7 @@
     <maven.plugin.scm.version>1.11.2</maven.plugin.scm.version>
 
     <maven.plugin.sonar.version>3.6.0.1398</maven.plugin.sonar.version>
-    <maven.plugin.jacoco.version>0.8.3</maven.plugin.jacoco.version>
+    <maven.plugin.jacoco.version>0.8.4</maven.plugin.jacoco.version>
     <maven.plugin.exec.version>1.6.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.0.0</maven.plugin.build-helper.version>
     <maven.plugin.pitest.version>1.4.7</maven.plugin.pitest.version>
