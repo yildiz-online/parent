@@ -30,7 +30,7 @@
   <artifactId>parent</artifactId>
   <version>3.0.6-SNAPSHOT</version>
 
-  <name>Yildiz Parent</name>
+  <name>Yildiz-Engine Parent</name>
   <description>Project to hold the parent pom for all children projects.</description>
   <url>https://bitbucket.org/yildiz-engine-team/parent</url>
 
