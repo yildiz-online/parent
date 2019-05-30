@@ -24,29 +24,33 @@
   ~
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
+
+  <name>Yildiz-Engine Parent</name>
+  <description>Project to hold the parent pom for all children projects.</description>
+  <inceptionYear>2009</inceptionYear>
+  <url>https://engine.yildiz-games.be</url>
+
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
   <version>3.0.6-SNAPSHOT</version>
 
-  <name>Yildiz-Engine Parent</name>
-  <description>Project to hold the parent pom for all children projects.</description>
-  <url>https://bitbucket.org/yildiz-engine-team/parent</url>
-
   <licenses>
     <license>
       <name>MIT License</name>
-      <url>http://yildiz.bitbucket.org/licence.txt</url>
+      <url>https://github.com/yildiz-online/parent/blob/develop/LICENSE</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
 
   <developers>
     <developer>
-      <name>Gregory Van den Borre</name>
+      <name>Grégory Van den Borre</name>
       <email>vandenborre.gregory@hotmail.fr</email>
-      <url>https://bitbucket.org/yildiz/</url>
+      <url>https://github.com/yildiz-online</url>
     </developer>
   </developers>
 
@@ -54,14 +58,14 @@
     <system>JIRA</system>
     <url>https://yildiz.atlassian.net</url>
   </issueManagement>
+
   <scm>
-    <connection>scm:git:https://bitbucket.org/yildiz-engine-team/parent</connection>
-    <developerConnection>scm:git:https://bitbucket.org/yildiz-engine-team/parent</developerConnection>
-    <url>https://bitbucket.org/yildiz-engine-team/parent</url>
+    <connection>scm:git:https://github.com/yildiz-online/parent</connection>
+    <developerConnection>scm:git:https://github.com/yildiz-online/parent</developerConnection>
+    <url>https://github.com/yildiz-online/parent</url>
   </scm>
 
   <packaging>pom</packaging>
-  <inceptionYear>2009</inceptionYear>
 
   <properties>
     <java.version>11</java.version>
