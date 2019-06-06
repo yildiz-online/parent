@@ -24,29 +24,33 @@
   ~
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
+
+  <name>Yildiz-Engine Parent</name>
+  <description>Project to hold the parent pom for all children projects.</description>
+  <inceptionYear>2009</inceptionYear>
+  <url>https://engine.yildiz-games.be</url>
+
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>3.0.5</version>
-
-  <name>Yildiz Parent</name>
-  <description>Project to hold the parent pom for all children projects.</description>
-  <url>https://bitbucket.org/yildiz-engine-team/parent</url>
+  <version>3.0.6</version>
 
   <licenses>
     <license>
       <name>MIT License</name>
-      <url>http://yildiz.bitbucket.org/licence.txt</url>
+      <url>https://github.com/yildiz-online/parent/blob/develop/LICENSE</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
 
   <developers>
     <developer>
-      <name>Gregory Van den Borre</name>
+      <name>Grégory Van den Borre</name>
       <email>vandenborre.gregory@hotmail.fr</email>
-      <url>https://bitbucket.org/yildiz/</url>
+      <url>https://github.com/yildiz-online</url>
     </developer>
   </developers>
 
@@ -54,14 +58,14 @@
     <system>JIRA</system>
     <url>https://yildiz.atlassian.net</url>
   </issueManagement>
+
   <scm>
-    <connection>scm:git:https://bitbucket.org/yildiz-engine-team/parent</connection>
-    <developerConnection>scm:git:https://bitbucket.org/yildiz-engine-team/parent</developerConnection>
-    <url>https://bitbucket.org/yildiz-engine-team/parent</url>
+    <connection>scm:git:https://github.com/yildiz-online/parent</connection>
+    <developerConnection>scm:git:https://github.com/yildiz-online/parent</developerConnection>
+    <url>https://github.com/yildiz-online/parent</url>
   </scm>
 
   <packaging>pom</packaging>
-  <inceptionYear>2009</inceptionYear>
 
   <properties>
     <java.version>11</java.version>
@@ -75,17 +79,17 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <maven.plugin.clean.version>3.1.0</maven.plugin.clean.version>
-    <maven.plugin.compiler.version>3.8.0</maven.plugin.compiler.version>
+    <maven.plugin.compiler.version>3.8.1</maven.plugin.compiler.version>
     <maven.plugin.deploy.version>2.8.2</maven.plugin.deploy.version>
     <maven.plugin.failsafe.version>2.22.1</maven.plugin.failsafe.version>
     <maven.plugin.install.version>2.5.2</maven.plugin.install.version>
     <maven.plugin.resources.version>3.1.0</maven.plugin.resources.version>
     <maven.plugin.site.version>3.7.1</maven.plugin.site.version>
-    <maven.plugin.surefire.version>2.22.1</maven.plugin.surefire.version>
+    <maven.plugin.surefire.version>2.22.2</maven.plugin.surefire.version>
     <maven.plugin.verifier.version>1.1</maven.plugin.verifier.version>
 
-    <maven.plugin.jar.version>3.1.1</maven.plugin.jar.version>
-    <maven.plugin.source.version>3.0.1</maven.plugin.source.version>
+    <maven.plugin.jar.version>3.1.2</maven.plugin.jar.version>
+    <maven.plugin.source.version>3.1.0</maven.plugin.source.version>
 
     <maven.plugin.javadoc.version>3.1.0</maven.plugin.javadoc.version>
 
@@ -95,26 +99,24 @@
     <maven.plugin.enforcer.version>1.4.1</maven.plugin.enforcer.version>
     <maven.plugin.gpg.version>1.6</maven.plugin.gpg.version>
     <maven.plugin.release.version>2.5.3</maven.plugin.release.version>
-    <maven.plugin.scm.version>1.11.1</maven.plugin.scm.version>
+    <maven.plugin.scm.version>1.11.2</maven.plugin.scm.version>
 
     <maven.plugin.sonar.version>3.6.0.1398</maven.plugin.sonar.version>
-    <maven.plugin.jacoco.version>0.8.3</maven.plugin.jacoco.version>
+    <maven.plugin.jacoco.version>0.8.4</maven.plugin.jacoco.version>
     <maven.plugin.exec.version>1.6.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.0.0</maven.plugin.build-helper.version>
-    <maven.plugin.pitest.version>1.4.6</maven.plugin.pitest.version>
+    <maven.plugin.pitest.version>1.4.8</maven.plugin.pitest.version>
     <maven.plugin.nexus.version>1.6.8</maven.plugin.nexus.version>
     <maven.plugin.nexus.serverId>ossrh</maven.plugin.nexus.serverId>
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.7</maven.plugin.version.version>
-    <maven.plugin.jooq.version>3.11.10</maven.plugin.jooq.version>
     <maven.plugin.owasp-dependency-check.version>4.0.2</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
-    <dependency.junit.version>5.4.1</dependency.junit.version>
-    <dependency.mockito.version>2.25.0</dependency.mockito.version>
-    <dependency.cucumber.version>4.2.5</dependency.cucumber.version>
+    <dependency.junit.version>5.4.2</dependency.junit.version>
+    <dependency.cucumber.version>4.3.0</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
 
     <argLine>--illegal-access=permit</argLine>
@@ -289,6 +291,7 @@
           <configuration>
             <excludePackageNames>*.generated.*</excludePackageNames>
             <quiet>true</quiet>
+            <encoding>UTF-8</encoding>
           </configuration>
           <executions>
             <execution>
@@ -327,12 +330,6 @@
               </configuration>
             </execution>
           </executions>
-        </plugin>
-
-        <plugin>
-          <groupId>org.jooq</groupId>
-          <artifactId>jooq-codegen-maven</artifactId>
-          <version>${maven.plugin.jooq.version}</version>
         </plugin>
 
         <plugin>
@@ -396,11 +393,6 @@
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
         <version>${dependency.junit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>${dependency.mockito.version}</version>
       </dependency>
       <dependency>
         <groupId>io.cucumber</groupId>
@@ -497,4 +489,3 @@
   </profiles>
 
 </project>
-
