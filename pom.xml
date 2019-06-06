@@ -111,13 +111,11 @@
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.7</maven.plugin.version.version>
-    <maven.plugin.jooq.version>3.11.11</maven.plugin.jooq.version>
     <maven.plugin.owasp-dependency-check.version>4.0.2</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
     <dependency.junit.version>5.4.2</dependency.junit.version>
-    <dependency.mockito.version>2.27.0</dependency.mockito.version>
     <dependency.cucumber.version>4.3.0</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
 
@@ -335,12 +333,6 @@
         </plugin>
 
         <plugin>
-          <groupId>org.jooq</groupId>
-          <artifactId>jooq-codegen-maven</artifactId>
-          <version>${maven.plugin.jooq.version}</version>
-        </plugin>
-
-        <plugin>
           <groupId>org.pitest</groupId>
           <artifactId>pitest-maven</artifactId>
           <version>${maven.plugin.pitest.version}</version>
@@ -401,11 +393,6 @@
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
         <version>${dependency.junit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>${dependency.mockito.version}</version>
       </dependency>
       <dependency>
         <groupId>io.cucumber</groupId>
