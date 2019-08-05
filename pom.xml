@@ -111,7 +111,7 @@
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.7</maven.plugin.version.version>
-    <maven.plugin.owasp-dependency-check.version>5.2.0</maven.plugin.owasp-dependency-check.version>
+    <maven.plugin.owasp-dependency-check.version>5.2.1</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
