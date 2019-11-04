@@ -89,12 +89,12 @@
     <maven.plugin.verifier.version>1.1</maven.plugin.verifier.version>
 
     <maven.plugin.jar.version>3.2.0</maven.plugin.jar.version>
-    <maven.plugin.source.version>3.1.0</maven.plugin.source.version>
+    <maven.plugin.source.version>3.2.0</maven.plugin.source.version>
 
     <maven.plugin.javadoc.version>3.1.1</maven.plugin.javadoc.version>
 
     <maven.plugin.antrun.version>1.8</maven.plugin.antrun.version>
-    <maven.plugin.assembly.version>3.1.1</maven.plugin.assembly.version>
+    <maven.plugin.assembly.version>3.2.0</maven.plugin.assembly.version>
     <maven.plugin.dependency.version>3.1.1</maven.plugin.dependency.version>
     <maven.plugin.enforcer.version>1.4.1</maven.plugin.enforcer.version>
     <maven.plugin.gpg.version>1.6</maven.plugin.gpg.version>
