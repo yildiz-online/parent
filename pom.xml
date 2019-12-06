@@ -36,7 +36,7 @@
 
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>3.0.8</version>
+  <version>3.0.9</version>
 
   <licenses>
     <license>
@@ -88,13 +88,13 @@
     <maven.plugin.surefire.version>2.22.2</maven.plugin.surefire.version>
     <maven.plugin.verifier.version>1.1</maven.plugin.verifier.version>
 
-    <maven.plugin.jar.version>3.1.2</maven.plugin.jar.version>
-    <maven.plugin.source.version>3.1.0</maven.plugin.source.version>
+    <maven.plugin.jar.version>3.2.0</maven.plugin.jar.version>
+    <maven.plugin.source.version>3.2.0</maven.plugin.source.version>
 
     <maven.plugin.javadoc.version>3.1.1</maven.plugin.javadoc.version>
 
     <maven.plugin.antrun.version>1.8</maven.plugin.antrun.version>
-    <maven.plugin.assembly.version>3.1.1</maven.plugin.assembly.version>
+    <maven.plugin.assembly.version>3.2.0</maven.plugin.assembly.version>
     <maven.plugin.dependency.version>3.1.1</maven.plugin.dependency.version>
     <maven.plugin.enforcer.version>1.4.1</maven.plugin.enforcer.version>
     <maven.plugin.gpg.version>1.6</maven.plugin.gpg.version>
@@ -111,7 +111,7 @@
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.7</maven.plugin.version.version>
-    <maven.plugin.owasp-dependency-check.version>5.2.2</maven.plugin.owasp-dependency-check.version>
+    <maven.plugin.owasp-dependency-check.version>5.2.4</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
