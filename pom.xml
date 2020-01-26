@@ -395,6 +395,11 @@
         <version>${dependency.junit.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-params</artifactId>
+        <version>${dependency.junit.version}</version>
+      </dependency>
+      <dependency>
         <groupId>io.cucumber</groupId>
         <artifactId>cucumber-java</artifactId>
         <version>${dependency.cucumber.version}</version>
