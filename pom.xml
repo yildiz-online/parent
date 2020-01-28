@@ -116,7 +116,7 @@
     <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
     <dependency.junit.version>5.6.0</dependency.junit.version>
-    <dependency.cucumber.version>5.1.1</dependency.cucumber.version>
+    <dependency.cucumber.version>5.1.2</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
 
     <argLine>--illegal-access=permit</argLine>
