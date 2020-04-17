@@ -113,7 +113,6 @@
     <maven.plugin.version.version>2.7</maven.plugin.version.version>
     <maven.plugin.owasp-dependency-check.version>5.3.2</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
-    <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
     <dependency.junit.version>5.6.2</dependency.junit.version>
     <dependency.cucumber.version>5.6.0</dependency.cucumber.version>
@@ -195,6 +194,20 @@
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>${maven.plugin.jacoco.version}</version>
+          <executions>
+            <execution>
+              <id>prepare-agent</id>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>report</id>
+              <goals>
+                <goal>report</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
 
         <plugin>
