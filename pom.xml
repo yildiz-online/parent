@@ -36,7 +36,7 @@
 
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>3.0.12</version>
+  <version>3.0.13</version>
 
   <licenses>
     <license>
@@ -189,26 +189,6 @@
             <useSystemClassLoader>false</useSystemClassLoader>
           </configuration>
         </plugin>
-
-        <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>${maven.plugin.jacoco.version}</version>
-        <executions>
-          <execution>
-            <id>prepare-agent</id>
-            <goals>
-              <goal>prepare-agent</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>report</id>
-            <goals>
-              <goal>report</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
 
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -398,6 +378,27 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+    <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${maven.plugin.jacoco.version}</version>
+        <executions>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 
   <dependencyManagement>
