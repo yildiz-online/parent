@@ -36,7 +36,7 @@
 
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>3.0.11</version>
+  <version>3.0.12</version>
 
   <licenses>
     <license>
@@ -93,8 +93,8 @@
 
     <maven.plugin.javadoc.version>3.2.0</maven.plugin.javadoc.version>
 
-    <maven.plugin.antrun.version>1.8</maven.plugin.antrun.version>
-    <maven.plugin.assembly.version>3.2.0</maven.plugin.assembly.version>
+    <maven.plugin.antrun.version>3.0.0</maven.plugin.antrun.version>
+    <maven.plugin.assembly.version>3.3.0</maven.plugin.assembly.version>
     <maven.plugin.dependency.version>3.1.2</maven.plugin.dependency.version>
     <maven.plugin.enforcer.version>1.4.1</maven.plugin.enforcer.version>
     <maven.plugin.gpg.version>1.6</maven.plugin.gpg.version>
@@ -113,7 +113,6 @@
     <maven.plugin.version.version>2.7</maven.plugin.version.version>
     <maven.plugin.owasp-dependency-check.version>5.3.2</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
-    <sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
 
     <dependency.junit.version>5.6.2</dependency.junit.version>
     <dependency.cucumber.version>5.6.0</dependency.cucumber.version>
@@ -192,10 +191,24 @@
         </plugin>
 
         <plugin>
-          <groupId>org.jacoco</groupId>
-          <artifactId>jacoco-maven-plugin</artifactId>
-          <version>${maven.plugin.jacoco.version}</version>
-        </plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>${maven.plugin.jacoco.version}</version>
+        <executions>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>report</id>
+            <goals>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
 
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
