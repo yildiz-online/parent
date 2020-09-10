@@ -71,7 +71,7 @@
     <java.version>11</java.version>
 
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
-    <kotlin.version>1.4.0</kotlin.version>
+    <kotlin.version>1.4.10</kotlin.version>
 
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
