@@ -118,7 +118,7 @@
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
 
     <dependency.junit.version>5.7.0</dependency.junit.version>
-    <dependency.cucumber.version>6.7.0</dependency.cucumber.version>
+    <dependency.cucumber.version>6.8.1</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
 
     <argLine>--illegal-access=permit</argLine>
