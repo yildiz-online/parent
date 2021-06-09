@@ -114,7 +114,7 @@
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.8.1</maven.plugin.version.version>
-    <maven.plugin.owasp-dependency-check.version>6.2.0</maven.plugin.owasp-dependency-check.version>
+    <maven.plugin.owasp-dependency-check.version>6.2.1</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
 
     <dependency.junit.version>5.7.2</dependency.junit.version>
