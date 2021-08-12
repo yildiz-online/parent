@@ -102,7 +102,7 @@
     <maven.plugin.enforcer.version>3.0.0</maven.plugin.enforcer.version>
     <maven.plugin.gpg.version>3.0.1</maven.plugin.gpg.version>
     <maven.plugin.release.version>2.5.3</maven.plugin.release.version>
-    <maven.plugin.scm.version>1.11.2</maven.plugin.scm.version>
+    <maven.plugin.scm.version>1.11.3</maven.plugin.scm.version>
 
     <maven.plugin.sonar.version>3.9.0.2155</maven.plugin.sonar.version>
     <maven.plugin.jacoco.version>0.8.7</maven.plugin.jacoco.version>
