@@ -117,7 +117,7 @@
     <maven.plugin.owasp-dependency-check.version>6.3.1</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
 
-    <dependency.junit.version>5.7.2</dependency.junit.version>
+    <dependency.junit.version>5.8.0</dependency.junit.version>
     <dependency.cucumber.version>6.11.0</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
 
