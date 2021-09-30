@@ -121,11 +121,10 @@
     <dependency.cucumber.version>6.11.0</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
 
-    <argLine>--illegal-access=permit</argLine>
   </properties>
 
   <prerequisites>
-    <maven>3.5.3</maven>
+    <maven>3.8.2</maven>
   </prerequisites>
 
   <build>
