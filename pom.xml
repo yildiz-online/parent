@@ -120,17 +120,11 @@
     <dependency.junit.version>5.8.2</dependency.junit.version>
     <dependency.cucumber.version>7.1.0</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
-
   </properties>
-
-  <prerequisites>
-    <maven>3.8.2</maven>
-  </prerequisites>
 
   <build>
     <pluginManagement>
       <plugins>
-
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
