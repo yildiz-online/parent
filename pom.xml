@@ -94,7 +94,7 @@
     <maven.plugin.jar.version>3.2.2</maven.plugin.jar.version>
     <maven.plugin.source.version>3.2.1</maven.plugin.source.version>
 
-    <maven.plugin.javadoc.version>3.3.2</maven.plugin.javadoc.version>
+    <maven.plugin.javadoc.version>3.4.0</maven.plugin.javadoc.version>
 
     <maven.plugin.antrun.version>3.0.0</maven.plugin.antrun.version>
     <maven.plugin.assembly.version>3.3.0</maven.plugin.assembly.version>
