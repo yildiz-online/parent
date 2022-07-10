@@ -97,7 +97,7 @@
     <maven.plugin.javadoc.version>3.4.0</maven.plugin.javadoc.version>
 
     <maven.plugin.antrun.version>3.1.0</maven.plugin.antrun.version>
-    <maven.plugin.assembly.version>3.4.0</maven.plugin.assembly.version>
+    <maven.plugin.assembly.version>3.4.1</maven.plugin.assembly.version>
     <maven.plugin.dependency.version>3.3.0</maven.plugin.dependency.version>
     <maven.plugin.enforcer.version>3.1.0</maven.plugin.enforcer.version>
     <maven.plugin.gpg.version>3.0.1</maven.plugin.gpg.version>
