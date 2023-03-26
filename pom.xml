@@ -118,7 +118,7 @@
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
 
     <dependency.junit.version>5.9.2</dependency.junit.version>
-    <dependency.cucumber.version>7.11.1</dependency.cucumber.version>
+    <dependency.cucumber.version>7.11.2</dependency.cucumber.version>
     <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
   </properties>
 
