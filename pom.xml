@@ -118,8 +118,6 @@
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
 
     <dependency.junit.version>5.10.0</dependency.junit.version>
-    <dependency.cucumber.version>7.14.0</dependency.cucumber.version>
-    <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
   </properties>
 
   <build>
@@ -461,26 +459,6 @@
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-params</artifactId>
         <version>${dependency.junit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-java</artifactId>
-        <version>${dependency.cucumber.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-picocontainer</artifactId>
-        <version>${dependency.cucumber.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-junit</artifactId>
-        <version>${dependency.cucumber.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.jayway.awaitility</groupId>
-        <artifactId>awaitility</artifactId>
-        <version>${dependency.awaitility.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
