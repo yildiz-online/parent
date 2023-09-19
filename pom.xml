@@ -105,7 +105,6 @@
     <maven.plugin.jacoco.version>0.8.10</maven.plugin.jacoco.version>
     <maven.plugin.exec.version>3.1.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.4.0</maven.plugin.build-helper.version>
-    <maven.plugin.pitest.version>1.14.4</maven.plugin.pitest.version>
     <maven.plugin.nexus.version>1.6.13</maven.plugin.nexus.version>
     <maven.plugin.nexus.serverId>ossrh</maven.plugin.nexus.serverId>
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
@@ -333,20 +332,6 @@
               </configuration>
             </execution>
           </executions>
-        </plugin>
-
-        <plugin>
-          <groupId>org.pitest</groupId>
-          <artifactId>pitest-maven</artifactId>
-          <version>${maven.plugin.pitest.version}</version>
-          <configuration>
-            <targetClasses>
-              <param>be.yildizgames.*</param>
-            </targetClasses>
-            <targetTests>
-              <param>be.yildizgames.*</param>
-            </targetTests>
-          </configuration>
         </plugin>
 
         <plugin>
