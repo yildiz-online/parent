@@ -111,7 +111,6 @@
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.16.0</maven.plugin.version.version>
-    <maven.plugin.owasp-dependency-check.version>8.4.0</maven.plugin.owasp-dependency-check.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
 
     <dependency.junit.version>5.10.0</dependency.junit.version>
@@ -403,18 +402,6 @@
             </execution>
           </executions>
         </plugin>
-        <plugin>
-          <groupId>org.owasp</groupId>
-          <artifactId>dependency-check-maven</artifactId>
-          <version>${maven.plugin.owasp-dependency-check.version}</version>
-          <executions>
-            <execution>
-              <goals>
-                <goal>check</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
@@ -512,17 +499,6 @@
           <url>https://nexus.yildiz-games.be/repository/Yildiz-Engine-Release/</url>
         </repository>
       </distributionManagement>
-    </profile>
-    <profile>
-      <id>owasp</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.owasp</groupId>
-            <artifactId>dependency-check-maven</artifactId>
-          </plugin>
-        </plugins>
-      </build>
     </profile>
   </profiles>
 
