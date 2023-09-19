@@ -93,6 +93,7 @@
     <maven.plugin.source.version>3.3.0</maven.plugin.source.version>
 
     <maven.plugin.javadoc.version>3.6.0</maven.plugin.javadoc.version>
+    <maven.plugin.javadoc.options></maven.plugin.javadoc.options>
 
     <maven.plugin.antrun.version>3.1.0</maven.plugin.antrun.version>
     <maven.plugin.assembly.version>3.6.0</maven.plugin.assembly.version>
@@ -296,6 +297,7 @@
             <excludePackageNames>*.generated.*</excludePackageNames>
             <quiet>true</quiet>
             <encoding>UTF-8</encoding>
+            <additionalOptions>${maven.plugin.javadoc.options}</additionalOptions>
           </configuration>
           <executions>
             <execution>
