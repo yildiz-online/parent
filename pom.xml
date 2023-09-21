@@ -3,7 +3,7 @@
 <!--
   ~ This file is part of the Yildiz-Engine project, licenced under the MIT License  (MIT)
   ~
-  ~  Copyright (c) 2019-2021 Grégory Van den Borre
+  ~  Copyright (c) 2019-2023 Grégory Van den Borre
   ~
   ~  More infos available: https://engine.yildiz-games.be
   ~
@@ -36,7 +36,7 @@
 
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>5.0.4</version>
+  <version>6.0.0</version>
 
   <licenses>
     <license>
@@ -68,58 +68,53 @@
   <packaging>pom</packaging>
 
   <properties>
-    <java.version>17</java.version>
-
-    <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
-    <kotlin.version>1.7.10</kotlin.version>
+    <java.version>21</java.version>
 
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
     <maven.compiler.release>${java.version}</maven.compiler.release>
+    <maven.compiler.args></maven.compiler.args>
 
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <maven.plugin.clean.version>3.2.0</maven.plugin.clean.version>
-    <maven.plugin.compiler.version>3.10.1</maven.plugin.compiler.version>
-    <maven.plugin.deploy.version>3.0.0</maven.plugin.deploy.version>
+    <maven.plugin.clean.version>3.3.1</maven.plugin.clean.version>
+    <maven.plugin.compiler.version>3.11.0</maven.plugin.compiler.version>
+    <maven.plugin.deploy.version>3.1.1</maven.plugin.deploy.version>
     <maven.plugin.failsafe.version>3.0.0-M5</maven.plugin.failsafe.version>
-    <maven.plugin.install.version>3.0.1</maven.plugin.install.version>
-    <maven.plugin.resources.version>3.3.0</maven.plugin.resources.version>
-    <maven.plugin.site.version>3.12.0</maven.plugin.site.version>
-    <maven.plugin.surefire.version>3.0.0-M7</maven.plugin.surefire.version>
+    <maven.plugin.install.version>3.1.1</maven.plugin.install.version>
+    <maven.plugin.resources.version>3.3.1</maven.plugin.resources.version>
+    <maven.plugin.site.version>3.12.1</maven.plugin.site.version>
+    <maven.plugin.surefire.version>3.1.2</maven.plugin.surefire.version>
     <maven.plugin.verifier.version>1.1</maven.plugin.verifier.version>
 
-    <maven.plugin.jar.version>3.2.2</maven.plugin.jar.version>
-    <maven.plugin.source.version>3.2.1</maven.plugin.source.version>
+    <maven.plugin.jar.version>3.3.0</maven.plugin.jar.version>
+    <maven.plugin.source.version>3.3.0</maven.plugin.source.version>
 
-    <maven.plugin.javadoc.version>3.4.0</maven.plugin.javadoc.version>
+    <maven.plugin.javadoc.version>3.6.0</maven.plugin.javadoc.version>
+    <maven.plugin.javadoc.options></maven.plugin.javadoc.options>
 
     <maven.plugin.antrun.version>3.1.0</maven.plugin.antrun.version>
-    <maven.plugin.assembly.version>3.4.2</maven.plugin.assembly.version>
-    <maven.plugin.dependency.version>3.3.0</maven.plugin.dependency.version>
-    <maven.plugin.enforcer.version>3.1.0</maven.plugin.enforcer.version>
-    <maven.plugin.gpg.version>3.0.1</maven.plugin.gpg.version>
-    <maven.plugin.release.version>2.5.3</maven.plugin.release.version>
-    <maven.plugin.scm.version>1.13.0</maven.plugin.scm.version>
+    <maven.plugin.assembly.version>3.6.0</maven.plugin.assembly.version>
+    <maven.plugin.dependency.version>3.6.0</maven.plugin.dependency.version>
+    <maven.plugin.enforcer.version>3.4.1</maven.plugin.enforcer.version>
+    <maven.plugin.gpg.version>3.1.0</maven.plugin.gpg.version>
+    <maven.plugin.release.version>3.0.1</maven.plugin.release.version>
+    <maven.plugin.scm.version>2.0.1</maven.plugin.scm.version>
 
-    <maven.plugin.sonar.version>3.9.1.2184</maven.plugin.sonar.version>
-    <maven.plugin.jacoco.version>0.8.8</maven.plugin.jacoco.version>
+    <maven.plugin.sonar.version>3.10.0.2594</maven.plugin.sonar.version>
+    <maven.plugin.jacoco.version>0.8.10</maven.plugin.jacoco.version>
     <maven.plugin.exec.version>3.1.0</maven.plugin.exec.version>
-    <maven.plugin.build-helper.version>3.3.0</maven.plugin.build-helper.version>
-    <maven.plugin.pitest.version>1.9.3</maven.plugin.pitest.version>
+    <maven.plugin.build-helper.version>3.4.0</maven.plugin.build-helper.version>
     <maven.plugin.nexus.version>1.6.13</maven.plugin.nexus.version>
     <maven.plugin.nexus.serverId>ossrh</maven.plugin.nexus.serverId>
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
-    <maven.plugin.version.version>2.11.0</maven.plugin.version.version>
-    <maven.plugin.owasp-dependency-check.version>7.1.1</maven.plugin.owasp-dependency-check.version>
+    <maven.plugin.version.version>2.16.1</maven.plugin.version.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
 
-    <dependency.junit.version>5.9.0</dependency.junit.version>
-    <dependency.cucumber.version>7.5.0</dependency.cucumber.version>
-    <dependency.awaitility.version>1.7.0</dependency.awaitility.version>
+    <dependency.junit.version>5.10.0</dependency.junit.version>
   </properties>
 
   <build>
@@ -148,38 +143,11 @@
         </plugin>
 
         <plugin>
-          <groupId>org.jetbrains.kotlin</groupId>
-          <artifactId>kotlin-maven-plugin</artifactId>
-          <version>${kotlin.version}</version>
-          <executions>
-            <execution>
-              <id>compile</id>
-              <goals> <goal>compile</goal> </goals>
-              <configuration>
-                <sourceDirs>
-                  <sourceDir>${project.basedir}/src/main/kotlin</sourceDir>
-                  <sourceDir>${project.basedir}/src/main/java</sourceDir>
-                </sourceDirs>
-              </configuration>
-            </execution>
-            <execution>
-              <id>test-compile</id>
-              <goals> <goal>test-compile</goal> </goals>
-              <configuration>
-                <sourceDirs>
-                  <sourceDir>${project.basedir}/src/test/kotlin</sourceDir>
-                  <sourceDir>${project.basedir}/src/test/java</sourceDir>
-                </sourceDirs>
-              </configuration>
-            </execution>
-          </executions>
-        </plugin>
-
-        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${maven.plugin.compiler.version}</version>
           <configuration>
+            <compilerArgs>${maven.compiler.args}</compilerArgs>
             <jdkToolchain><version>${java.version}</version></jdkToolchain>
             <release>${maven.compiler.release}</release>
             <source>${maven.compiler.source}</source>
@@ -329,6 +297,7 @@
             <excludePackageNames>*.generated.*</excludePackageNames>
             <quiet>true</quiet>
             <encoding>UTF-8</encoding>
+            <additionalOptions>${maven.plugin.javadoc.options}</additionalOptions>
           </configuration>
           <executions>
             <execution>
@@ -343,7 +312,7 @@
             <dependency>
               <groupId>org.ow2.asm</groupId>
               <artifactId>asm</artifactId>
-              <version>9.3</version>
+              <version>9.5</version>
             </dependency>
           </dependencies>
         </plugin>
@@ -370,20 +339,6 @@
         </plugin>
 
         <plugin>
-          <groupId>org.pitest</groupId>
-          <artifactId>pitest-maven</artifactId>
-          <version>${maven.plugin.pitest.version}</version>
-          <configuration>
-            <targetClasses>
-              <param>be.yildizgames.*</param>
-            </targetClasses>
-            <targetTests>
-              <param>be.yildizgames.*</param>
-            </targetTests>
-          </configuration>
-        </plugin>
-
-        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
           <version>${maven.plugin.enforcer.version}</version>
@@ -405,18 +360,6 @@
                   <dependencyConvergence/>
                 </rules>
               </configuration>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <groupId>org.owasp</groupId>
-          <artifactId>dependency-check-maven</artifactId>
-          <version>${maven.plugin.owasp-dependency-check.version}</version>
-          <executions>
-            <execution>
-              <goals>
-                <goal>check</goal>
-              </goals>
             </execution>
           </executions>
         </plugin>
@@ -448,11 +391,6 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-stdlib</artifactId>
-        <version>${kotlin.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
         <version>${dependency.junit.version}</version>
@@ -461,26 +399,6 @@
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-params</artifactId>
         <version>${dependency.junit.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-java</artifactId>
-        <version>${dependency.cucumber.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-picocontainer</artifactId>
-        <version>${dependency.cucumber.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-junit</artifactId>
-        <version>${dependency.cucumber.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.jayway.awaitility</groupId>
-        <artifactId>awaitility</artifactId>
-        <version>${dependency.awaitility.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -527,32 +445,6 @@
           <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
       </distributionManagement>
-    </profile>
-    <profile>
-      <id>deploy-to-private</id>
-      <activation>
-        <property>
-          <name>maven.plugin.nexus.skip</name>
-        </property>
-      </activation>
-      <distributionManagement>
-        <repository>
-          <id>yildiz-engine-nexus-release</id>
-          <name>Releases</name>
-          <url>https://nexus.yildiz-games.be/repository/Yildiz-Engine-Release/</url>
-        </repository>
-      </distributionManagement>
-    </profile>
-    <profile>
-      <id>owasp</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.owasp</groupId>
-            <artifactId>dependency-check-maven</artifactId>
-          </plugin>
-        </plugins>
-      </build>
     </profile>
   </profiles>
 
