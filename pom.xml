@@ -86,7 +86,7 @@
     <maven.plugin.install.version>3.1.1</maven.plugin.install.version>
     <maven.plugin.resources.version>3.3.1</maven.plugin.resources.version>
     <maven.plugin.site.version>3.12.1</maven.plugin.site.version>
-    <maven.plugin.surefire.version>3.2.3</maven.plugin.surefire.version>
+    <maven.plugin.surefire.version>3.2.5</maven.plugin.surefire.version>
     <maven.plugin.verifier.version>1.1</maven.plugin.verifier.version>
 
     <maven.plugin.jar.version>3.3.0</maven.plugin.jar.version>
