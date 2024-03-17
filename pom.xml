@@ -96,7 +96,7 @@
     <maven.plugin.javadoc.options></maven.plugin.javadoc.options>
 
     <maven.plugin.antrun.version>3.1.0</maven.plugin.antrun.version>
-    <maven.plugin.assembly.version>3.6.0</maven.plugin.assembly.version>
+    <maven.plugin.assembly.version>3.7.0</maven.plugin.assembly.version>
     <maven.plugin.dependency.version>3.6.1</maven.plugin.dependency.version>
     <maven.plugin.enforcer.version>3.4.1</maven.plugin.enforcer.version>
     <maven.plugin.gpg.version>3.1.0</maven.plugin.gpg.version>
