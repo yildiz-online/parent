@@ -107,7 +107,7 @@
     <maven.plugin.jacoco.version>0.8.12</maven.plugin.jacoco.version>
     <maven.plugin.exec.version>3.3.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.6.0</maven.plugin.build-helper.version>
-    <maven.plugin.nexus.version>1.6.13</maven.plugin.nexus.version>
+    <maven.plugin.nexus.version>1.7.0</maven.plugin.nexus.version>
     <maven.plugin.nexus.serverId>ossrh</maven.plugin.nexus.serverId>
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
