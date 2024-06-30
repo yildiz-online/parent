@@ -111,7 +111,7 @@
     <maven.plugin.nexus.serverId>ossrh</maven.plugin.nexus.serverId>
     <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
     <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
-    <maven.plugin.version.version>2.16.2</maven.plugin.version.version>
+    <maven.plugin.version.version>2.17.0</maven.plugin.version.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
 
     <dependency.junit.version>5.10.2</dependency.junit.version>
