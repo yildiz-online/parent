@@ -108,9 +108,6 @@
     <maven.plugin.exec.version>3.5.0</maven.plugin.exec.version>
     <maven.plugin.build-helper.version>3.6.0</maven.plugin.build-helper.version>
     <maven.plugin.nexus.version>1.7.0</maven.plugin.nexus.version>
-    <maven.plugin.nexus.serverId>ossrh</maven.plugin.nexus.serverId>
-    <maven.plugin.nexus.nexusUrl>https://central.sonatype.com/</maven.plugin.nexus.nexusUrl>
-    <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
     <maven.plugin.version.version>2.18.0</maven.plugin.version.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
 
@@ -268,9 +265,9 @@
           <version>${maven.plugin.nexus.version}</version>
           <extensions>true</extensions>
           <configuration>
-            <serverId>${maven.plugin.nexus.serverId}</serverId>
-            <nexusUrl>${maven.plugin.nexus.nexusUrl}</nexusUrl>
-            <autoReleaseAfterClose>${maven.plugin.nexus.autoReleaseAfterClose}</autoReleaseAfterClose>
+            <serverId>ossrh</serverId>
+            <nexusUrl>https://central.sonatype.com/</nexusUrl>
+            <autoReleaseAfterClose>true</autoReleaseAfterClose>
           </configuration>
         </plugin>
 
