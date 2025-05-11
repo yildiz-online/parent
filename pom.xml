@@ -36,7 +36,7 @@
 
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>6.0.0</version>
+  <version>6.0.1</version>
 
   <licenses>
     <license>
@@ -79,42 +79,39 @@
     <project.resources.sourceEncoding>UTF-8</project.resources.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <maven.plugin.clean.version>3.3.1</maven.plugin.clean.version>
-    <maven.plugin.compiler.version>3.11.0</maven.plugin.compiler.version>
-    <maven.plugin.deploy.version>3.1.1</maven.plugin.deploy.version>
+    <maven.plugin.clean.version>3.4.1</maven.plugin.clean.version>
+    <maven.plugin.compiler.version>3.14.0</maven.plugin.compiler.version>
+    <maven.plugin.deploy.version>3.1.4</maven.plugin.deploy.version>
     <maven.plugin.failsafe.version>3.0.0-M5</maven.plugin.failsafe.version>
-    <maven.plugin.install.version>3.1.1</maven.plugin.install.version>
+    <maven.plugin.install.version>3.1.4</maven.plugin.install.version>
     <maven.plugin.resources.version>3.3.1</maven.plugin.resources.version>
-    <maven.plugin.site.version>3.12.1</maven.plugin.site.version>
-    <maven.plugin.surefire.version>3.1.2</maven.plugin.surefire.version>
+    <maven.plugin.site.version>3.21.0</maven.plugin.site.version>
+    <maven.plugin.surefire.version>3.5.3</maven.plugin.surefire.version>
     <maven.plugin.verifier.version>1.1</maven.plugin.verifier.version>
 
-    <maven.plugin.jar.version>3.3.0</maven.plugin.jar.version>
-    <maven.plugin.source.version>3.3.0</maven.plugin.source.version>
+    <maven.plugin.jar.version>3.4.2</maven.plugin.jar.version>
+    <maven.plugin.source.version>3.3.1</maven.plugin.source.version>
 
-    <maven.plugin.javadoc.version>3.6.0</maven.plugin.javadoc.version>
+    <maven.plugin.javadoc.version>3.11.2</maven.plugin.javadoc.version>
     <maven.plugin.javadoc.options></maven.plugin.javadoc.options>
 
     <maven.plugin.antrun.version>3.1.0</maven.plugin.antrun.version>
-    <maven.plugin.assembly.version>3.6.0</maven.plugin.assembly.version>
-    <maven.plugin.dependency.version>3.6.0</maven.plugin.dependency.version>
-    <maven.plugin.enforcer.version>3.4.1</maven.plugin.enforcer.version>
-    <maven.plugin.gpg.version>3.1.0</maven.plugin.gpg.version>
-    <maven.plugin.release.version>3.0.1</maven.plugin.release.version>
-    <maven.plugin.scm.version>2.0.1</maven.plugin.scm.version>
+    <maven.plugin.assembly.version>3.7.1</maven.plugin.assembly.version>
+    <maven.plugin.dependency.version>3.8.1</maven.plugin.dependency.version>
+    <maven.plugin.enforcer.version>3.5.0</maven.plugin.enforcer.version>
+    <maven.plugin.gpg.version>3.2.7</maven.plugin.gpg.version>
+    <maven.plugin.release.version>3.1.1</maven.plugin.release.version>
+    <maven.plugin.scm.version>2.1.0</maven.plugin.scm.version>
 
-    <maven.plugin.sonar.version>3.10.0.2594</maven.plugin.sonar.version>
-    <maven.plugin.jacoco.version>0.8.10</maven.plugin.jacoco.version>
-    <maven.plugin.exec.version>3.1.0</maven.plugin.exec.version>
-    <maven.plugin.build-helper.version>3.4.0</maven.plugin.build-helper.version>
-    <maven.plugin.nexus.version>1.6.13</maven.plugin.nexus.version>
-    <maven.plugin.nexus.serverId>ossrh</maven.plugin.nexus.serverId>
-    <maven.plugin.nexus.nexusUrl>https://oss.sonatype.org/</maven.plugin.nexus.nexusUrl>
-    <maven.plugin.nexus.autoReleaseAfterClose>true</maven.plugin.nexus.autoReleaseAfterClose>
-    <maven.plugin.version.version>2.16.1</maven.plugin.version.version>
+    <maven.plugin.sonar.version>5.1.0.4751</maven.plugin.sonar.version>
+    <maven.plugin.jacoco.version>0.8.13</maven.plugin.jacoco.version>
+    <maven.plugin.exec.version>3.5.0</maven.plugin.exec.version>
+    <maven.plugin.build-helper.version>3.6.0</maven.plugin.build-helper.version>
+    <maven.plugin.nexus.version>1.7.0</maven.plugin.nexus.version>
+    <maven.plugin.version.version>2.18.0</maven.plugin.version.version>
     <sonar.binaries>${project.basedir}/target/classes</sonar.binaries>
 
-    <dependency.junit.version>5.10.0</dependency.junit.version>
+    <dependency.junit.version>5.12.2</dependency.junit.version>
   </properties>
 
   <build>
@@ -268,9 +265,9 @@
           <version>${maven.plugin.nexus.version}</version>
           <extensions>true</extensions>
           <configuration>
-            <serverId>${maven.plugin.nexus.serverId}</serverId>
-            <nexusUrl>${maven.plugin.nexus.nexusUrl}</nexusUrl>
-            <autoReleaseAfterClose>${maven.plugin.nexus.autoReleaseAfterClose}</autoReleaseAfterClose>
+            <serverId>ossrh</serverId>
+            <nexusUrl>https://central.sonatype.com/</nexusUrl>
+            <autoReleaseAfterClose>true</autoReleaseAfterClose>
           </configuration>
         </plugin>
 
@@ -312,7 +309,7 @@
             <dependency>
               <groupId>org.ow2.asm</groupId>
               <artifactId>asm</artifactId>
-              <version>9.5</version>
+              <version>9.8</version>
             </dependency>
           </dependencies>
         </plugin>
