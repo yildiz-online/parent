@@ -36,7 +36,7 @@
 
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>6.0.2-SNAPSHOT</version>
+  <version>6.0.2</version>
 
   <licenses>
     <license>
