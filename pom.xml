@@ -36,7 +36,7 @@
 
   <groupId>be.yildiz-games</groupId>
   <artifactId>parent</artifactId>
-  <version>6.0.1</version>
+  <version>6.0.2</version>
 
   <licenses>
     <license>
@@ -266,7 +266,6 @@
           <configuration>
             <publishingServerId>ossrh</publishingServerId>
             <autoPublish>true</autoPublish>
-            <waitUntil>published</waitUntil>
           </configuration>
         </plugin>
 
