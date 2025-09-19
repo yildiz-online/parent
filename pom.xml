@@ -91,6 +91,7 @@
 
     <maven.plugin.jar.version>3.4.2</maven.plugin.jar.version>
     <maven.plugin.source.version>3.3.1</maven.plugin.source.version>
+    <maven.plugin.sign.version>1.1.0</maven.plugin.sign.version>
 
     <maven.plugin.javadoc.version>3.11.3</maven.plugin.javadoc.version>
     <maven.plugin.javadoc.options></maven.plugin.javadoc.options>
@@ -99,7 +100,6 @@
     <maven.plugin.assembly.version>3.7.1</maven.plugin.assembly.version>
     <maven.plugin.dependency.version>3.8.1</maven.plugin.dependency.version>
     <maven.plugin.enforcer.version>3.6.1</maven.plugin.enforcer.version>
-    <maven.plugin.gpg.version>3.2.8</maven.plugin.gpg.version>
     <maven.plugin.release.version>3.1.1</maven.plugin.release.version>
     <maven.plugin.scm.version>2.1.0</maven.plugin.scm.version>
 
@@ -315,9 +315,11 @@
         <plugin>
           <groupId>org.simplify4u.plugins</groupId>
           <artifactId>sign-maven-plugin</artifactId>
-          <version>1.1.0</version>
+          <version>${maven.plugin.sign.version}</version>
           <executions>
             <execution>
+              <id>sign-artifacts</id>
+              <phase>deploy</phase>
               <goals>
                 <goal>sign</goal>
               </goals>
@@ -401,8 +403,8 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
+            <groupId>org.simplify4u.plugins</groupId>
+            <artifactId>sign-maven-plugin</artifactId>
           </plugin>
           <plugin>
             <groupId>org.sonatype.central</groupId>
