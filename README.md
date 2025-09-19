@@ -16,7 +16,7 @@ This module is mostly used for build configuration, it contains only the Maven P
 To build this pom you will need
 
 * Maven 3 https://maven.apache.org/
-* java 9 JDK http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+* Latest JDK http://www.oracle.com/technetwork/java/javase/downloads/
 
 ### Contribution guidelines ###
 
