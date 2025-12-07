@@ -100,7 +100,7 @@
     <maven.plugin.assembly.version>3.8.0</maven.plugin.assembly.version>
     <maven.plugin.dependency.version>3.9.0</maven.plugin.dependency.version>
     <maven.plugin.enforcer.version>3.6.2</maven.plugin.enforcer.version>
-    <maven.plugin.release.version>3.2.0</maven.plugin.release.version>
+    <maven.plugin.release.version>3.3.0</maven.plugin.release.version>
     <maven.plugin.scm.version>2.2.1</maven.plugin.scm.version>
 
     <maven.plugin.sonar.version>5.3.0.6276</maven.plugin.sonar.version>
